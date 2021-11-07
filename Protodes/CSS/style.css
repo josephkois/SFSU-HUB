@@ -1,0 +1,20 @@
+body{background-color:#E5E5E5;}
+.navbar{
+    background-color: #34328F;
+}
+.nav-link{
+    color: #FCE308;
+}
+.navbar-brand{
+    color: white;
+}
+#row3{
+    background-color: #34328F;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-radius: 10px;
+}
+.htitle{
+    color:#FCE308 ;
+    font-weight: bold;
+}
