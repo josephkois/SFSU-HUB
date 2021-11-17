@@ -1,0 +1,64 @@
+.navbar{
+    
+    height: 60px;
+   
+}
+
+#row3{
+    background-color: #34328F;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-radius: 10px;
+}
+#rowt{
+    margin-bottom: 3%;
+    padding: 1%;
+    border-radius: 10px;
+}
+.htitle{
+    color:#FCE308 ;
+    font-weight: bold;
+}
+#row4{
+    background-color: white;
+    margin-bottom: 3%;
+    padding: 1%;
+    border-radius: 10px;
+}
+.ptitle{
+    color:black;
+    font-weight: bold;
+}
+.pbut{
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #34328F;
+    color: white;
+}
+.container{
+    margin: 0 auto;
+}
+#nav-left-side{
+    align-content: flex-end;
+}
+#grad {
+    margin-bottom: 50px;
+    background-image: linear-gradient(to bottom right, #FBF560, #7E2986);
+    padding: 10px;
+  }
+  #loginbut{
+    background-color: #34328F;
+    color: white;
+    border: 2px solid #34328F;
+    border-radius: 50px;
+  }
+  #regbut{
+    background-color: white;
+    color:#34328F;
+    border:2px solid #34328F;
+    border-radius: 50px;
+  }
+  #loginb{
+    border: 5px solid black; border-radius: 10px; 
+    padding: 20px 30px ;
+  }
