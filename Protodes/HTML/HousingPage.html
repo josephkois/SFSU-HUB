@@ -103,7 +103,7 @@
             <!--the search bar and buttons-->
             <form class="form-inline col-md-12 my-2 my-lg-0">
                 <div class="input-group col-md-4 " style="border:2px solid #34328F; border-radius:5px; padding:0;">
-                    <input type="text" class="form-control" placeholder="Search Address.....">
+                    <input type="text" class="form-control" style="border: none;"placeholder="Search Address.....">
                     <span class="input-group-text" id="basic-addon2" style="
                     border:2px solid #34328F; border-radius:5px
                     ;background-color: #34328f; color:white;
@@ -127,26 +127,25 @@
         </div>
         <div class="row" style="margin-top: 20px;">
             <div class="col-md-2" style="border-right: 5px solid black;">
-                <p style="font-size: 25px; font-weight: bold;">Filters</p>
+                <p style="font-size: 2calc(0.015 * 100vw); font-weight: bold;">Filters</p>
                 <div style="border-top: 2px solid grey;padding-top: 20px; padding-bottom: 20px;">
-                    <p style="font-size: 20px; font-weight: 500;">Lease Date</p>
-                    <p>From</p>
-                    <div class="input-group col-md-4">
-                        <div class="form-group">
+                    <p style="font-size: calc(0.015 * 100vw); font-weight: 500;">Lease Date</p>
+                   
+                    <label for="start"style="font-weight: bold;">From:</label>
 
-                            <select class="form-control" id="sel1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                        </div>
+<input type="date" id="start" name="trip-start"
+       value="2021-12-22"
+       min="2021-12-01" max="2022-12-31" style="border: 2px solid black; border-radius: 5px;">
+       </br>
+       <label for="start" style="font-weight: bold;">To:</label>
 
-                    </div>
-                    <p>To</p>
+       <input type="date" id="start" name="trip-start"
+              value="2021-12-22"
+              min="2021-12-01" max="2022-12-31" style="border: 2px solid black; border-radius: 5px;">
+
                 </div>
                 <div style="border-top: 2px solid grey;padding-top: 20px; padding-bottom: 20px;">
-                    <p style="font-size: 20px; font-weight: 500;">Maximum Price</p>
+                    <p style="font-size: calc(0.015 * 100vw); font-weight: 500;">Maximum Price</p>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend" style="background-color: white;">
                             <span class="input-group-text" style="background-color: white; 
@@ -162,8 +161,8 @@
 
                     </div>
                 </div>
-                <div style="border-top: 2px solid grey;padding-top: 20px; padding-bottom: 20px;">
-                    <p style="font-size: 20px; font-weight: 500;">Category</p>
+                <div style="border-top: 2px solid grey;padding-top: 20px; padding-bottom: 20px; ">
+                    <p style="font-size: calc(0.015 * 100vw); font-weight: 500; ">Category</p>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                         <label class="form-check-label" for="defaultCheck1">
@@ -202,16 +201,16 @@
                     </div>
                 </div>
                 <div style="border-top: 2px solid grey;padding-top: 20px; padding-bottom: 20px;">
-                    <p style="font-size: 20px; font-weight: 500;">Number of occupants</p>
+                    <p style="font-size: calc(0.015 * 100vw); font-weight: 500;">Number of occupants</p>
                     <input type="text" class="form-control" id="usr" placeholder="Ex. 5"
-                        style="border:2px solid black; border-radius: 10px">
+                        style="border:2px solid black; border-radius: 10px; height: calc(0.015 * 100vw);">
                 </div>
             </div>
 
-
+        </br>
             <div class="col-md-10">
                 <div>
-                    <p>Recent Listings (6 of 52)</p>
+                    <p style="font-size: calc(0.02* 100vw); margin-bottom: 2px; margin-top: 20px;">Recent Listings (6 of 52)</p>
                     <div style="border: 2px solid grey; border-radius: 10px; padding-right: 10px; padding-left: 10px;">
                         <div id="row4">
                             <div class="col-md-12">
@@ -221,79 +220,80 @@
 
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
                                     background-size: cover;
-                                    margin-right: 10px;">
+                                    margin-right: 10px; height: calc(0.2 * 100vw);
+                                    box-shadow: 5px 10px 20px 5px black insert;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
 
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
                                     background-size: cover;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
                                     background-size: cover;margin-left: 10px;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                             </div>
                             </br>
                             <div class="row row justify-content-around">
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
-                                    background-size: cover;margin-right: 10px;">
+                                    background-size: cover;margin-right: 10px;height: calc(0.2 * 100vw);">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
                                     background-size: cover;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
                                     background-size: cover;margin-left: 10px;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                             </div>
@@ -302,7 +302,7 @@
 
                 </div>
                 <div>
-                    <p>Housing Closest to Campus (6 of 68)</p>
+                    <p style="font-size: calc(0.02* 100vw); margin-bottom: 2px;">Housing Closest to Campus (6 of 68)</p>
                     <div style="border: 2px solid grey; border-radius: 10px; padding-right: 10px; padding-left: 10px;">
                         <div id="row4">
                             <div class="col-md-12">
@@ -310,78 +310,79 @@
                             </div>
                             <div class="row row justify-content-around">
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
-                                    background-size: cover;margin-right: 10px;">
+                                    background-size: cover;margin-right: 10px;height: calc(0.2 * 100vw);
+                                    box-shadow: inset 3px 3px 10px;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
                                     background-size: cover;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
                                     background-size: cover;margin-left: 10px;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                             </div>
                             </br>
                             <div class="row row justify-content-around">
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
-                                    background-size: cover;margin-right: 10px;">
+                                    background-size: cover;margin-right: 10px;height: calc(0.2 * 100vw);">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
                                     background-size: cover;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                                 <div class="col bg-image card shadow-1-strong" style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
                                     background-size: cover; margin-left: 10px;">
                                     <div class="card-body text-white">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title">$$$$$$$</h5>
                                         <p class="card-text">
                                             </br>
                                             </br>
                                             </br>
                                         </p>
-                                        <a href="#!" class="btn btn-outline-light">Button</a>
+                                        <a href="#!" class="btn btn-outline-light">Housing Address</a>
                                     </div>
                                 </div>
                             </div>
@@ -400,36 +401,36 @@
                         style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
                         background-size: cover;">
                         <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">$$$$$$$</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the
+                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
                                 card's content.
                             </p>
-                            <a href="#!" class="btn btn-outline-light">Button</a>
+                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
                         </div>
                     </div>
                     <div class="col-md-3 bg-image card shadow-1-strong"
                         style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
                         background-size: cover;">
                         <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">$$$$$$$</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the
+                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
                                 card's content.
                             </p>
-                            <a href="#!" class="btn btn-outline-light">Button</a>
+                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
                         </div>
                     </div>
                     <div class="col-md-3 bg-image card shadow-1-strong"
                         style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
                         background-size: cover;">
                         <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">$$$$$$$</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the
+                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
                                 card's content.
                             </p>
-                            <a href="#!" class="btn btn-outline-light">Button</a>
+                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
                         </div>
                     </div>
                 </div>
@@ -445,36 +446,36 @@
                         style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
                         background-size: cover;">
                         <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">$$$$$$$</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the
+                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
                                 card's content.
                             </p>
-                            <a href="#!" class="btn btn-outline-light">Button</a>
+                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
                         </div>
                     </div>
                     <div class="col-md-3 bg-image card shadow-1-strong"
                         style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
                         background-size: cover;">
                         <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">$$$$$$$</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the
+                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
                                 card's content.
                             </p>
-                            <a href="#!" class="btn btn-outline-light">Button</a>
+                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
                         </div>
                     </div>
                     <div class="col-md-3 bg-image card shadow-1-strong"
                         style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
                         background-size: cover;">
                         <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">$$$$$$$</h5>
                             <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the
+                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
                                 card's content.
                             </p>
-                            <a href="#!" class="btn btn-outline-light">Button</a>
+                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
                         </div>
                     </div>
                 </div>
