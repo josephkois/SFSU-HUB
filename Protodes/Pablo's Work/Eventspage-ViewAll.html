@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Events Page - View All</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="EventsPage.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </head>
+
+  <body>
+     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Navbar (not perfect)-->
+    <div class="container">
+    <nav class=" navbar-custom fixed-top navbar-expand-lg bg-dark">
+        
+        
+        <div class="navbar navbar-custom" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <strong><a class="nav-link" style="font-size:18px;" href="#">Events <span class="sr-only">(current)</span></a></strong>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Housing<span class="sr-only">(current)</span></a>
+                </li>
+
+            
+            </ul>
+            <div class="col-md-8 my-2 my-lg-0"></div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="navbar-brand" href="#">
+                        <span class="material-icons md-light md-24">help_outline</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="navbar-brand" href="#">
+                        <span class="material-icons md-light md-24">settings</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://www.rollingstone.com/wp-content/uploads/2021/09/kendrick-lamar-top-o-the-morning.jpg?resize=1800,1200&w=1800" alt="Avatar Logo" style="width:30px;"
+                            class="my-circle">
+
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Username<span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    </div>
+    
+    <div class="container separate">
+        <h1 style="font-family: Montserrat;">Find out what other students are up to by viewing upcoming and popular events at San Francisco State!</h1>
+    </div>
+    
+    <div class="row my-row justify-content-between" style="height: 50px; margin-left:2px">
+        <form class="form-inline col-lg-6 searchbar">
+            <input class="form-control mr-sm-2 col-md-12" id="sb" type="Q search" placeholder="Search event title..."
+                aria-label="Search">
+        </form>
+
+        <a style="text-decoration: none;margin-right:90px;" href="CreateEvent.html" class="col-lg-2">
+            <div class="searchEventButton rounded-pill align-self-end">
+                <div  class="row" style="margin-left:20px">
+                    <img  src="https://icon-library.com/images/white-plus-icon/white-plus-icon-3.jpg" alt="Eye icon" style="width:20px;height:20px;margin-top: 10px;">
+                    <p style="color:aliceblue;margin-left: 10px;margin-top:5px;font-size:20px;font-family:Montserrat">Create Event</p>
+                </div>
+                
+            </div>
+        </a>
+    </div>
+    <div class="row " style="margin-top:50px;margin-left:20px;margin-bottom:50px">
+        <div class="col-lg-3">
+            <strong><p style="font-size: 25px;font-family: Montserrat;">Filters</p></strong>
+            <div class="row">
+                <div class="col-lg-11">
+                        <hr  style="width:300px;text-align: left;" size="30" noshade> 
+                        <p style="font-size: 15px;font-family: Montserrat;">Date</p>
+                        <div class= "row">
+                            <div class="col-lg-4">
+                                <select class="form-control form-control-sm">
+                                <option>Day</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <select class="form-control form-control-sm">
+                                    <option>Month</option>
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <select class="form-control form-control-sm">
+                                    <option>Year</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    <option>2019</option>
+                                    <option>2018</option>
+                                    <option>2017</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                    
+                                
+                                </select>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="col-lg-11">
+                    <hr  style="width:300px;text-align: left;" size="30" noshade> 
+                    <p style="font-size: 15px;font-family: Montserrat;">Maximum Price</p>
+                    <div class= "row">
+                        <div class="input-group col-lg-9">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-11">
+                    <hr  style="width:300px;text-align: left; " size="30" noshade> 
+                    <p style="font-size: 15px;font-family: Montserrat;">Category</p>
+                    <div class= "row">
+                        <div class="input-group col-lg-9">
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Sports
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Concert
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Student Organized
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Party
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Food
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Charity
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="vertical"></div>
+
+
+        <div class="col-lg-8" style="margin-bottom:100px;">
+            <div >
+                <p style="font-family:Montserrat;font-size:25px;margin-left:25px">All events (Showing 6 of 6)</p>
+                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
+                    <div class="col-lg-6 ">
+                        <div class="card1 row" style="border-radius:25px;">
+                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class="card-date">12/21/2021</p>
+                            </div>
+                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p  class="card-title">Gator Fest</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                        <div class="col-lg-6">
+                            <p>
+                                <strong>Description: </strong>Annual Festival organized by San Francisco State University. Students have free entry, but drinks are not free.
+                            </p>
+                            <p>
+                                <strong>Price: </strong>Free
+                            </p>
+                        </div>
+                        <div class="vertical" style="height:170px"></div>
+                        <div class="col-lg-5">
+                            <strong>Category:</strong>
+                            <div style="margin-top:15px">
+                                <ul>
+                                    <li>Concert</li>
+                                    <li>Party</li>
+                                </ul>
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+
+                    
+
+                        
+                    
+                </a>
+
+                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
+                    <div class="col-lg-6" >
+                        <div class="card2 row" >
+                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class=card-date>12/21/2021</p>
+                            </div>
+                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p  class="card-title">Awards Dinner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                        <div class="col-lg-6">
+                            <p>
+                                <strong>Description: </strong>Christmas dinner ceremony where awards are given. No casual/work clothes allowed. All proceeds go to charity.
+                            </p>
+                            <p>
+                                <strong>Price: </strong>35$
+                            </p>
+                        </div>
+                        <div class="vertical" style="height:170px"></div>
+                        <div class="col-lg-5">
+                            <strong>Category:</strong>
+                            <div style="margin-top:15px">
+                                <ul>
+                                    <li>Food</li>
+                                    <li>Party</li>
+                                    <li>Charity</li>
+                                </ul>
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+
+                    
+
+                        
+                    
+                </a>
+
+                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
+                    <div class="col-lg-6">
+                        <div class="card3 row" >
+                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class=card-date>12/21/2021</p>
+                            </div>
+                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p  class="card-title">Presentation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                        <div class="col-lg-6">
+                            <p>
+                                <strong>Description: </strong>Students present their projects in front of investors and other attendees.
+                            </p>
+                            <p>
+                                <strong>Price: </strong>Free
+                            </p>
+                        </div>
+                        <div class="vertical" style="height:170px"></div>
+                        <div class="col-lg-5">
+                            <strong>Category:</strong>
+                            <div style="margin-top:15px">
+                                <ul>
+                                    <li>Student Organized</li>
+                                </ul>
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+
+                    
+
+                        
+                    
+                </a>
+
+                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
+                    <div class="col-lg-6">
+                        <div class="card4 row">
+                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                <p class=card-date>12/21/2021</p>
+                            </div>
+                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                <p  class="card-title">Concert</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                        <div class="col-lg-6">
+                            <p>
+                                <strong>Description: </strong>Concert organized by SF State students. Artists TBA
+                            </p>
+                            <p>
+                                <strong>Price: </strong>$20
+                            </p>
+                        </div>
+                        <div class="vertical" style="height:170px"></div>
+                        <div class="col-lg-5">
+                            <strong>Category:</strong>
+                            <div style="margin-top:15px">
+                                <ul>
+                                    <li>Concert</li>
+                                    <li>Party</li>
+                                    <li>Student Organized</li>
+                                </ul>
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+
+                    
+
+                        
+                    
+                </a>
+
+                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
+                    <div class="col-lg-6">
+                        <div class="card5 row">
+                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                <p class=card-date>12/21/2021</p>
+                            </div>
+                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                <p  class="card-title">Festival</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                        <div class="col-lg-6">
+                            <p>
+                                <strong>Description: </strong>Winter Festival 2021. All types of music from EDM to Hip-Hop.
+                            </p>
+                            <p>
+                                <strong>Price: </strong>$55
+                            </p>
+                        </div>
+                        <div class="vertical" style="height:170px"></div>
+                        <div class="col-lg-5">
+                            <strong>Category:</strong>
+                            <div style="margin-top:15px">
+                                <ul>
+                                    <li>Concert</li>
+                                    <li>Party</li>
+                                </ul>
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+
+                    
+
+                        
+                    
+                </a>
+
+                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
+                    <div class="col-lg-6">
+                        <div class="card6 row">
+                                <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                    <p class=card-date>12/21/2021</p>
+                                </div>
+                                <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                    <p  class="card-title">Convention</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                        <div class="col-lg-6">
+                            <p>
+                                <strong>Description: </strong>Technology convention organized by California Universities to show studies made in several fields.
+                            </p>
+                            <p>
+                                <strong>Price: </strong>$15
+                            </p>
+                        </div>
+                        <div class="vertical" style="height:170px"></div>
+                        <div class="col-lg-5">
+                            <strong>Category:</strong>
+                            <div style="margin-top:15px">
+                                <ul>
+                                    <li>Student Organized</li>
+                                </ul>
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+
+                    
+
+                        
+                    
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+   
+    
+
+  </body>
+</html>
