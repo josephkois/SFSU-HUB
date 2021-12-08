@@ -4,40 +4,53 @@
     height: 60px;
     color:black;
 }
+.navbar ul {
+    margin: 0;
+}
+
 .nav-link{
     color: #FCE308;
 }
+
 .navbar-brand{
     color: white;
 }
+
 #row3{
     background-color: #34328F;
     margin-bottom: 3%;
     padding: 1%;
     border-radius: 10px;
 }
+
 .htitle{
     color:#FCE308 ;
     font-weight: bold;
 }
+
 #row4{
     background-color: white;
     padding: 2%;
     border-radius: 10px;
 }
+
 .ptitle{
     color:black;
     font-weight: bold;
 }
+
 .pbut{
     margin-left: 10px;
     border-radius: 20px;
     background-color: #34328F;
     color: white;
 }
+
 .container{
     margin: 0 auto;
 }
+
 #nav-left-side{
     align-content: flex-end;
 }
+
