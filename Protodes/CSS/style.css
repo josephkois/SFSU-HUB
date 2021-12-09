@@ -34,10 +34,23 @@
     border-radius: 20px;
     background-color: #34328F;
     color: white;
+    border: 2px solid #34328F;
 }
 .container{
     margin: 0 auto;
 }
 #nav-left-side{
     align-content: flex-end;
+}
+.card{
+    
+                                    background-size: cover;margin-right: 10px;height: calc(0.2 * 100vw);
+                                    box-shadow: 
+        inset 0px 30px 20px  rgba(0,0,0,0.8),
+        inset 0px -30px 20px  rgba(0,0,0,0.8);
+}
+.mbot{
+    position: absolute;
+        bottom: 0;
+        left: 0;
 }

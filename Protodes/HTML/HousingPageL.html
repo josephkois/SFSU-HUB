@@ -15,10 +15,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body id="body" background-color="white">
+
+
+<body id="body"background-color="white" >
 
     <!-- Optional JavaScript -->
-    <script src="../JS/PageFunctions.js"></script>
+    <script src="PageFunctions.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -32,8 +34,100 @@
 
 
 
+        <div class="cotainer" style="display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        ">
+        <div class="row justify-content-center" style="display: table-cell;
+          vertical-align: middle;">
+    
+          <div class="col-md-4" style="border: 5px solid black; border-radius: 10px; box-shadow: 5px; margin-left: auto;
+            margin-right: auto; background-color: white;" id="loginb">
+            <div class="row">
+              <div class="col align-self-center" style="text-align: center;">
+                <img class="img-thumbnail" style="border: none; " src="../Images/gator_web 1.png">
+              </div>
+    
+            </div>
+            <form action="/action_page.php">
+              <p style="font-weight: bold; font-size: 20px;">Log in</p>
+              <div class="form-group">
+    
+                <input type="email" class="form-control" style="border: 2px solid black; border-radius: 10px;" id="email"
+                  placeholder="Username">
+                <div style="text-align: right;"> <a href="#" style="align-self: right; font-size: 15px;">Forgot
+                    Username?</a></div>
+    
+              </div>
+              <div class="form-group">
+    
+                <input type="password" class="form-control" style="border: 2px solid black;border-radius: 10px;" id="pwd"
+                  placeholder="Password">
+                <div style="text-align: right;"> <a href="#" style="align-self: right;font-size: 15px;">Forgot Password?</a>
+                </div>
+              </div>
+              <div style="text-align: center;">
+                <button type="button" class="btn-sm" id="loginbut" style="height:40px; padding: 0;">
+                  <p style="padding:0; margin:0;  font-size: 20px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </p>
+                </button>
+              </div>
+    
+              <div class="row justify-content-around">
+                <div class="col-md-4">
+                  <div style="border:20x solid black; text-align: right;">
+                    <p style="font-weight:900;">&nbsp;&nbsp;_______________&nbsp;&nbsp;</p>
+                  </div>
+                </div>
+    
+                <div class="col-md-2" style="text-align: center; margin-top: 10px;">
+                  <p style="font-weight: bold;">OR</p>
+                </div>
+    
+                <div class="col-md-4">
+                  <div style="border:20x solid black ; text-align: left;">
+                    <p style="font-weight:900;">_______________&nbsp;&nbsp;</p>
+                  </div>
+                </div>
+              </div>
+              <a style="text-decoration: none" href="Register.html">
+              <div style="text-align: center;">
+                <button type="button" class="btn-sm" id="regbut" style="height:40px; padding:0;">
+                  <p style="padding:0; margin:0; font-size: 20px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </p>
+                </button>
+              </div>
+    </a>
+    
+    
+    
+    
+            </form>
+          </div>
+    
+        </div>
+      </div>
+       
 
-        <div id="ndblur">
+
+
+
+<div style="position:absolute;
+top : 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: white;
+content:none;
+pointer-events: none;
+z-index:100;
+opacity: .5">
     <nav class="navbar fixed-top navbar-expand-lg ">
         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
             data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
@@ -69,25 +163,15 @@
                                 <span class="material-icons md-light md-24">help_outline</span>
                             </a>
                         </li>
-                        <li class="nav-item active" style="line-height: 50px;">
-                            <a class="navbar-brand" href="#">
-                                (help)
-                            </a>
-                        </li>
+                        
                         <li class="nav-item active" style="float:center">
                             <a class="navbar-brand" href="#" style="line-height: 65px;">
                                 <span class="material-icons md-light md-24">settings</span>
                             </a>
                         </li>
-                        <li class="nav-item active" style="float:center">
-                            <a class="navbar-brand" href="#" style="line-height:50px;">
-                                <img src="../Images/skyblueblk.png" alt="Avatar Logo" style="width:30px;"
-                                    class="rounded-pill">
-
-                            </a>
-                        </li>
+                     
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" style="line-height:50px;color:white;">Username<span
+                            <a class="nav-link" href="#" style="line-height:50px;color:white;">Login<span
                                     class="sr-only">(current)</span></a>
                         </li>
 
@@ -107,9 +191,9 @@
         </div>
         <div>
             <!--the search bar and buttons-->
-            <form class="form-inline row justify-content-around my-2 my-lg-0">
+            <form class="form-inline row justify-content-around  my-2 my-lg-0">
                 <div class="input-group col-md-4 " style="border:2px solid #34328F; border-radius:5px; padding:0;">
-                    <input type="text" class="form-control" style="border: none;" placeholder="Search Address.....">
+                    <input type="text" class="form-control" style="border: none;"placeholder="Search Address.....">
                     <span class="input-group-text" id="basic-addon2" style="
                     border:2px solid #34328F; border-radius:5px
                     ;background-color: #34328f; color:white;
@@ -127,7 +211,7 @@
                         </span>List All Housing
                     </div>
                 </a>
-                <a style="text-decoration: none; float: right;"  onclick="login()">
+                <a style="text-decoration: none; float: right;" href="HousingPageL.html">
                     <div class="pbut" style="padding: 5px;">
                         <span class="material-icons" style="float: left; margin-right: 5px;">
                             add
@@ -144,16 +228,18 @@
                 <p style="font-size: 2calc(0.015 * 100vw); font-weight: bold;">Filters</p>
                 <div style="border-top: 2px solid grey;padding-top: 20px; padding-bottom: 20px;">
                     <p style="font-size: calc(0.015 * 100vw); font-weight: 500;">Lease Date</p>
+                   
+                    <label for="start"style="font-weight: bold;">From:</label>
 
-                    <label for="start" style="font-weight: bold;">From:</label>
+<input type="date" id="start" name="trip-start"
+       value="2021-12-22"
+       min="2021-12-01" max="2022-12-31" style="border: 2px solid black; border-radius: 5px;">
+       </br>
+       <label for="start" style="font-weight: bold;">To:</label>
 
-                    <input type="date" id="start" name="trip-start" value="2021-12-22" min="2021-12-01" max="2022-12-31"
-                        style="border: 2px solid black; border-radius: 5px;">
-                    </br>
-                    <label for="start" style="font-weight: bold;">To:</label>
-
-                    <input type="date" id="start" name="trip-start" value="2021-12-22" min="2021-12-01" max="2022-12-31"
-                        style="border: 2px solid black; border-radius: 5px;">
+       <input type="date" id="start" name="trip-start"
+              value="2021-12-22"
+              min="2021-12-01" max="2022-12-31" style="border: 2px solid black; border-radius: 5px;">
 
                 </div>
                 <div style="border-top: 2px solid grey;padding-top: 20px; padding-bottom: 20px;">
@@ -219,11 +305,10 @@
                 </div>
             </div>
 
-            </br>
+        </br>
             <div class="col-md-10">
                 <div>
-                    <p style="font-size: calc(0.02* 100vw); margin-bottom: 2px; margin-top: 20px;">Recent Listings (6 of
-                        52)</p>
+                    <p style="font-size: calc(0.02* 100vw); margin-bottom: 2px; margin-top: 20px;">Recent Listings (6 of 52)</p>
                     <div style="border: 2px solid grey; border-radius: 10px; padding-right: 10px; padding-left: 10px;">
                         <div id="row4">
                             <div class="col-md-12">
@@ -406,97 +491,11 @@
                 </div>
             </div>
         </div>
-        <!--<div>Recent Listings
-            <div class="row" id="row4">
-                <div class="col-md-12">
-                    <p class="ptitle">Most Viewed Housing</p>
-                </div>
-                <div class="row row justify-content-around">
-                    <div class="col-md-3 bg-image card shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">$$$$$$$</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
-                                card's content.
-                            </p>
-                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 bg-image card shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">$$$$$$$</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
-                                card's content.
-                            </p>
-                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 bg-image card shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">$$$$$$$</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
-                                card's content.
-                            </p>
-                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="row" id="row4">
-                <div class="col-md-12">
-                    <p class="ptitle">Listings closest to Main Campus</p>
-                </div>
-                <div class="row row justify-content-around">
-                    <div class="col-md-3 bg-image card shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">$$$$$$$</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
-                                card's content.
-                            </p>
-                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 bg-image card shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">$$$$$$$</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
-                                card's content.
-                            </p>
-                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 bg-image card shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">$$$$$$$</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the $$$$$$$ and make up the bulk of the
-                                card's content.
-                            </p>
-                            <a href="#!" class="btn btn-outline-light">Housing Address</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
+    
     </div>
-    </div>
+</div>
+
+
 </body>
+
 </html>
