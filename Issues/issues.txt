@@ -1,0 +1,1 @@
+navbar right side like login, settings, about needs to be centered on the entire navbar

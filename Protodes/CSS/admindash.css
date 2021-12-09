@@ -1,0 +1,50 @@
+/* begin navbar style */
+.navbar{
+    height: 60px;
+    color:black;
+}
+.navbar ul {
+    margin: 0;
+}
+
+.nav-link{
+    color: #FCE308;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+#nav-left-side{
+    align-content: flex-end;
+}
+
+/* begin admin dashboard style */
+.content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+}
+
+.content .cards {
+    padding: 75px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content .cards .card {
+    width: 850px;
+    height: 200px;
+    background: rgb(233, 233, 233);
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content .content-2 {
+
+}
