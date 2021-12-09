@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HousingForm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/homepageCSS.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body background-color="white" id="body">
+
+    <!-- Optional JavaScript -->
+    <script src="../JS/PageFunctions.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+        <div id="ndblur">
+    <nav class="navbar fixed-top navbar-expand-lg ">
+        <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+            data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
+            <span class="material-icons">
+                menu
+            </span>
+
+        </button>
+        <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F;" id="navb">
+            <div class="col-4" id="navb">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../Pablo's Work/EventsPage.html">Events <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="HousingPage.html" style="font-weight: bold;">Housing<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <div >
+                    <div style="float: left;">
+                        <a class="navbar-brand" href="#" style="line-height: 45px;">
+                            <span class="material-icons md-light md-24"></span>
+                        </a>
+                    </div>
+                <div style="float: left;position: absolute; right: 170px;">
+                    <a class="navbar-brand" href="#" style="line-height: 45px;">
+                        <span class="material-icons md-light md-24">help_outline</span>
+                    </a>
+                </div>
+                <div style="float: left;position: absolute; right: 130px;">
+                    <a class="navbar-brand" href="#" style="line-height: 45px;">
+                        <span class="material-icons md-light md-24">settings</span>
+                    </a>
+                </div>
+                <div style="float: left;position: absolute; right: 80px;">
+                    <a class="navbar-brand" href="#" style="line-height:30px;">
+                        <img src="../Images/skyblueblk.png" alt="Avatar Logo" style="width:30px;"
+                            class="rounded-pill">
+
+                    </a>
+                </div>
+                <div style="float: left; position: absolute; right:0;">
+                    <a class="nav-link" href="#" style="line-height:30px;color:white; padding-left: 0;">Username<span
+                        class="sr-only">(current)</span></a>
+                </div>
+            </div>
+            </div>
+      
+        </div>
+
+    </nav>
+
+    <div class="container-fluid" style="margin-top: 100px; ">
+        <div style="right:0; position:absolute; margin: 10px;">
+            <p>* = mandatory</p>
+        </div>
+        <div>
+            <h3>Create Listing</h3>
+        </div>
+        <div class="formgroups">
+            <div>
+                <div class="formli"><h6 >Address*</h6>
+                <input class="col-md-6"/></div>
+                <div class="formli"><h6>Apartment Number</h6>
+                <input  class="col-md-1"/></div>
+                <div class="formli"><h6>Postal Code*</h6>
+                <input  class="col-md-2"/></div>
+                
+            </div>
+        </div>
+        <div class="formgroups">
+            <div>
+                <div class="formli"><h6>Lease Date From*</h6>
+                <input type="date" 
+                value="2021-12-22"
+                min="2021-12-01" max="2022-12-31"/></div>
+                <div class="formli"> <h6>Lease Date To*</h6>
+                <input type="date" 
+                value="2021-12-22"
+                min="2021-12-01" max="2022-12-31"/></div>
+               
+            </div>
+            
+        </div>
+        <div class="formgroups">
+            <div>
+                <div class="formli"><h6>Number of Occupants*</h6>
+                <input  class="col-md-1"/></div>
+                
+            </div>
+        </div>
+        <div class="formgroups">
+            <div>
+                <div class="formli"><h6>Rent*</h6>
+                <input/></div>
+                
+            </div>
+        </div>
+        <div class="formgroups">
+            <div>
+                <div class="formli"><h6>Contact email*</h6>
+                <input class="col-md-6"/></div>
+                
+            </div>
+        </div>
+        <div class="formgroups">
+            <div>
+                
+                <div >
+                    <p style="font-size: calc(0.015 * 100vw); font-weight: 500; ">Special Tags</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Shared
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Single
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Pet Friendly
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Party Friendly
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Female only
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Male only
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formgroups">
+            <div>
+                <div class="formli"> 
+                     <h6>Description</h6>
+                    <textarea style="border-radius: 5px;" cols="50" rows="5"></textarea>
+                </div>
+              
+            </div>
+            <div  class="col-md-3" style="border:2px solid #CB9A2C; padding: 20px; border-radius: 10px;">
+                <h5> + Add Cover Picture</h5>
+                <input type="file" style="border-radius: 5px; height:100px"/>
+            </div>
+        </div>
+        
+        <div class="row justify-content-around" style="margin-bottom: 20px;">
+        <div style="text-align: center;">
+            <button type="button" class="btn-sm" id="regbut" style="height:40px; padding:0;">
+              <p style="padding:0; margin:0; font-size: 20px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </p>
+            </button>
+          </div>
+          <a href="../Pablo's Work/EventConfirmation.html">
+          <div style="text-align: center;">
+            <button type="button" class="btn-sm" id="loginbut" style="height:40px; padding:0;">
+              <p style="padding:0; margin:0; font-size: 20px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </p>
+            </button>
+          </div></a>
+    </div>
+    </div>
+
+    
+</div>
+</body>
+
+</html>
