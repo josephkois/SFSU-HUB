@@ -17,6 +17,7 @@
   <body>
      
     <!-- Optional JavaScript -->
+    <script src="../JS/PageFunctions.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -30,7 +31,7 @@
             <div class="navbar navbar-custom" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../HTML/HomePage.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <strong><a class="nav-link" style="font-size:18px;" href="#">Events <span class="sr-only">(current)</span></a></strong>
@@ -39,7 +40,7 @@
                         <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Housing<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../HTML/HousingPage.html">Housing<span class="sr-only">(current)</span></a>
                     </li>
 
                 
@@ -75,6 +76,7 @@
 
 
     </div>
+<div id="formbox">
     <div style="margin-top:100px;margin-left:100px">
         <div class="row">
             <h class="col-lg-10" style="font-size:70px;font-family:Montserrat">Create Event</h>
@@ -288,23 +290,23 @@
                     </button>
                 </div>
                 <div class="col-lg-2">
-                    <button class="searchEventButton rounded-pill" type="submit" style="height:60px"> 
+                    <button class="searchEventButton rounded-pill" type="submit" onclick="confirmation('EventsPage')" style="height:60px"> 
                         <p style="color:aliceblue;margin:10px;font-size:20px;font-family:Montserrat">
                             Submit
                         </p>
                     </button>
                 </div>
-            </div>
-        </div>
-        
-
-        
-
-        </form>
+            </div></form>
 
         
         
     </div>
+</div>
+        
+
+        
+
+        
 
    
 
