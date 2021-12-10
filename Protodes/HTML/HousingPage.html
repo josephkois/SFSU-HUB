@@ -34,7 +34,69 @@
 
 
         <div id="ndblur">
-    <nav class="navbar fixed-top navbar-expand-lg ">
+            <nav class="navbar fixed-top navbar-expand-lg ">
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                    data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
+                    <span class="material-icons">
+                        menu
+                    </span>
+        
+                </button>
+                <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F;" id="navb">
+                    <div class="col-4" id="navb">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../Pablo's Work/EventsPage.html">Events <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="HousingPage.html" style="font-weight: bold;">Housing<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+        
+                        </ul>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <div >
+                            <div style="float: left;">
+                                <a class="navbar-brand" href="#" style="line-height: 45px;">
+                                    <span class="material-icons md-light md-24"></span>
+                                </a>
+                            </div>
+                        <div style="float: left;position: absolute; right: 170px;">
+                            <a class="navbar-brand" href="#" style="line-height: 45px;">
+                                <span class="material-icons md-light md-24">help_outline</span>
+                            </a>
+                        </div>
+                        <div style="float: left;position: absolute; right: 130px;">
+                            <a class="navbar-brand" href="#" style="line-height: 45px;">
+                                <span class="material-icons md-light md-24">settings</span>
+                            </a>
+                        </div>
+                        <div style="float: left;position: absolute; right: 80px;">
+                            <a class="navbar-brand" href="#" style="line-height:30px;">
+                                <img src="../Images/skyblueblk.png" alt="Avatar Logo" style="width:30px;"
+                                    class="rounded-pill">
+        
+                            </a>
+                        </div>
+                        <div style="float: left; position: absolute; right:0;">
+                            <a class="nav-link" href="#" style="line-height:30px;color:white; padding-left: 0;">Username<span
+                                class="sr-only">(current)</span></a>
+                        </div>
+                    </div>
+                    </div>
+              
+                </div>
+        
+            </nav>
+    <!--<nav class="navbar fixed-top navbar-expand-lg ">
         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
             data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
             <span class="material-icons">
@@ -96,7 +158,7 @@
             </div>
         </div>
 
-    </nav>
+    </nav>-->
 
     <div class="container-fluid" style="margin-top: 100px; ">
         <!--below navbar-->
@@ -127,7 +189,7 @@
                         </span>List All Housing
                     </div>
                 </a>
-                <a style="text-decoration: none; float: right;"  onclick="login()">
+                <a style="text-decoration: none; float: right;"  onclick="login('Housing')">
                     <div class="pbut" style="padding: 5px;">
                         <span class="material-icons" style="float: left; margin-right: 5px;">
                             add
