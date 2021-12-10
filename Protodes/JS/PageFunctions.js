@@ -26,7 +26,6 @@ function login(pagename){
 console.log('inside the login function');}
 
 //to redirect user to the forum of the certain page after logging in
-//not sure how'll it work, will think about it
 function logged(pagename){
     console.log('insdie the logged functiom');
     if(pagename === 'Housing'){

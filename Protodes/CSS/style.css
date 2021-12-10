@@ -20,7 +20,9 @@
     background-color: #34328F;
     margin-bottom: 3%;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 5px solid gray;
+    width: calc(.9 * 100vw);
 }
 
 .htitle{
@@ -47,20 +49,29 @@
     border: 2px solid #34328F;
 }
 
-.container{
-    margin: 0 auto;
-}
+
 
 #nav-left-side{
     align-content: flex-end;
 }
 .card{
     
-                                    background-size: cover;margin-right: 10px;height: calc(0.2 * 100vw);
-                                    box-shadow: 
-        inset 0px 30px 20px  rgba(0,0,0,0.8),
-        inset 0px -30px 20px  rgba(0,0,0,0.8);
+    background-size: cover;
+    margin-right: 10px;
+    height: calc(0.2 * 110vw);
+    box-shadow: inset 0px 30px 20px  rgba(0,0,0,0.8),
+                inset 0px -30px 20px  rgba(0,0,0,0.8);
 }
+.cardh{
+    background-size: cover;
+    margin-right: 0px;
+    width:calc(0.1 * 200vw) ;
+    height: calc(0.1 * 140vw);
+    box-shadow: inset 0px -30px 20px  rgba(0,0,0,0.8);
+    margin: 0px 7px 0px 7px;
+    border-radius: 7px;
+}
+
 .mbot{
     position: absolute;
         bottom: 0;

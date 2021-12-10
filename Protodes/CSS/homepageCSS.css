@@ -7,7 +7,7 @@
 #row3{
     background-color: #34328F;
     margin-bottom: 3%;
-    padding: 1%;
+  
     border-radius: 10px;
 }
 
@@ -43,9 +43,7 @@
     color: white;
 }
 
-.container{
-    margin: 0 auto;
-}
+
 
 #nav-left-side{
     align-content: flex-end;
@@ -76,4 +74,9 @@
     border-radius: 10px; 
     padding: 20px 30px ;
     
+}
+#homecontainer{
+    
+    display: flex;
+    align-items: center;
 }
