@@ -1,7 +1,7 @@
 
 .navbar{
-    
-    height: 60px;
+    padding: 0;
+    height: 50px;
     color:black;
 }
 .navbar ul {
@@ -44,6 +44,7 @@
     border-radius: 20px;
     background-color: #34328F;
     color: white;
+    border: 2px solid #34328F;
 }
 
 .container{
@@ -53,4 +54,38 @@
 #nav-left-side{
     align-content: flex-end;
 }
+.card{
+    
+                                    background-size: cover;margin-right: 10px;height: calc(0.2 * 100vw);
+                                    box-shadow: 
+        inset 0px 30px 20px  rgba(0,0,0,0.8),
+        inset 0px -30px 20px  rgba(0,0,0,0.8);
+}
+.mbot{
+    position: absolute;
+        bottom: 0;
+        left: 0;
+}
 
+nav{
+    height: 10%;
+    padding-top: 0;
+}
+#navb{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+
+}
+.formgroups{
+    border-top: 2px solid gray;
+    margin:20px;
+    padding: 10px;
+}
+.formli{
+    margin-bottom: 15px;
+}
+.formli>input{
+    border: 2px solid black;
+    border-radius: 5px;
+}
