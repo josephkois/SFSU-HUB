@@ -22,7 +22,46 @@ a.hov2:hover{
     border-width: 5px;
     border-radius:25px;
     background-color: grey;
+    font-weight:bolder;
 }
+
+.hov3:hover{
+    color:white;
+    background-color: black;
+}
+
+.hov4:hover{
+   
+    background-color: white;
+    color:#34328F;
+    border-width: 10px;
+    border-style:solid;
+    border-color:#34328F;
+}
+
+.hov4{
+    background-color:#34328F;
+    height:75px;
+    text-align:center;
+    
+}
+
+.hov5:hover{
+   
+    background-color: white;
+    color:#34328F;
+    border-width: 3px;
+    border-style:solid;
+    border-color:#34328F;
+}
+
+.hov5{
+    background-color:#34328F;
+    height:75px;
+    text-align:center;
+    
+}
+
 
 .nav-link{
     color:#FCE308
