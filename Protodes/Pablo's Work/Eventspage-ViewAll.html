@@ -26,52 +26,68 @@
     <!-- Navbar (not perfect)-->
     <div id="ndblur">
     <div class="container">
-    <nav class=" navbar-custom fixed-top navbar-expand-lg bg-dark">
-        
-        
-        <div class="navbar navbar-custom" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../HTML/HomePage.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <strong><a class="nav-link" style="font-size:18px;" href="#">Events <span class="sr-only">(current)</span></a></strong>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="../HTML/HousingPage.html">Housing<span class="sr-only">(current)</span></a>
-                </li>
-
-            
-            </ul>
-            <div class="col-md-8 my-2 my-lg-0"></div>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="navbar-brand" href="#">
-                        <span class="material-icons md-light md-24">help_outline</span>
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="navbar-brand" href="#">
-                        <span class="material-icons md-light md-24">settings</span>
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="navbar-brand" href="#">
-                        <img src="https://www.rollingstone.com/wp-content/uploads/2021/09/kendrick-lamar-top-o-the-morning.jpg?resize=1800,1200&w=1800" alt="Avatar Logo" style="width:30px;"
-                            class="my-circle">
-
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Username<span class="sr-only">(current)</span></a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
+        <nav class="navbar fixed-top navbar-expand-lg ">
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
+                <span class="material-icons">
+                    menu
+                </span>
+    
+            </button>
+            <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F;" id="navb">
+                <div class="col-4" id="navb">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Pablo's Work/EventsPage.html"  style="font-weight: bold;">Events <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="HousingPage.html" >Housing<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <div >
+                        <div style="float: left;">
+                            <a class="navbar-brand" href="#" style="line-height: 45px;">
+                                <span class="material-icons md-light md-24"></span>
+                            </a>
+                        </div>
+                    <div style="float: left;position: absolute; right: 170px;">
+                        <a class="navbar-brand" href="#" style="line-height: 45px;">
+                            <span class="material-icons md-light md-24">help_outline</span>
+                        </a>
+                    </div>
+                    <div style="float: left;position: absolute; right: 130px;">
+                        <a class="navbar-brand" href="#" style="line-height: 45px;">
+                            <span class="material-icons md-light md-24">settings</span>
+                        </a>
+                    </div>
+                    <div style="float: left;position: absolute; right: 80px;">
+                        <a class="navbar-brand" href="#" style="line-height:30px;">
+                            <img src="../Images/skyblueblk.png" alt="Avatar Logo" style="width:30px;"
+                                class="rounded-pill">
+    
+                        </a>
+                    </div>
+                    <div style="float: left; position: absolute; right:0;">
+                        <a class="nav-link" href="#" style="line-height:30px;color:white; padding-left: 0;">Username<span
+                            class="sr-only">(current)</span></a>
+                    </div>
+                </div>
+                </div>
+          
+            </div>
+    
+        </nav>
     </div>
     
     <div class="container separate">
@@ -85,7 +101,7 @@
         </form>
 
         <a style="text-decoration: none;margin-right:90px;" onclick="login('Events')" class="col-lg-2">
-            <div class="searchEventButton rounded-pill align-self-end">
+            <div class="searchEventButton rounded-pill align-self-end" style="width:200px">
                 <div  class="row" style="margin-left:20px">
                     <img  src="https://icon-library.com/images/white-plus-icon/white-plus-icon-3.jpg" alt="Eye icon" style="width:20px;height:20px;margin-top: 10px;">
                     <p style="color:aliceblue;margin-left: 10px;margin-top:5px;font-size:20px;font-family:Montserrat">Create Event</p>
@@ -242,241 +258,238 @@
         <div class="col-lg-8" style="margin-bottom:100px;">
             <div >
                 <p style="font-family:Montserrat;font-size:25px;margin-left:25px">All events (Showing 6 of 6)</p>
-                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
-                    <div class="col-lg-6 ">
-                        <div class="card1 row" style="border-radius:25px;">
-                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                <p class="card-date">12/21/2021</p>
-                            </div>
-                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                <p  class="card-title">Gator Fest</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                <a href="ViewEvent.html" class="row hov" style="margin:25px;color: black; text-decoration: none; height:235px;">
+                    <div class="row" style="margin:15px">
+
                         <div class="col-lg-6">
-                            <p>
-                                <strong>Description: </strong>Annual Festival organized by San Francisco State University. Students have free entry, but drinks are not free.
-                            </p>
-                            <p>
-                                <strong>Price: </strong>Free
-                            </p>
-                        </div>
-                        <div class="vertical" style="height:170px"></div>
-                        <div class="col-lg-5">
-                            <strong>Category:</strong>
-                            <div style="margin-top:15px">
-                                <ul>
-                                    <li>Concert</li>
-                                    <li>Party</li>
-                                </ul>
+                            <div class="card1 row" style="border-radius:25px;">
+                                <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class="card-date">12/21/2021</p>
+                                </div>
+                                <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p  class="card-title">Gator Fest</p>
+                                </div>
                             </div>
-                            
-                
+                        </div>
+                        <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Description: </strong>Annual Festival organized by San Francisco State University. Students have free entry, but drinks are not free.
+                                </p>
+                                <p>
+                                    <strong>Price: </strong>Free
+                                </p>
+                            </div>
+                            <div class="vertical" style="height:170px"></div>
+                            <div class="col-lg-5">
+                                <strong>Category:</strong>
+                                <div style="margin-top:15px">
+                                    <ul>
+                                        <li>Concert</li>
+                                        <li>Party</li>
+                                    </ul>
+                                </div>
+                                
+                    
+                            </div>
                         </div>
                     </div>
-
-                    
-
-                        
                     
                 </a>
 
-                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
-                    <div class="col-lg-6" >
-                        <div class="card2 row" >
-                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                <p class=card-date>12/21/2021</p>
+                <a href="ViewEvent.html" class=" hov row" style="margin:25px;color: black; text-decoration: none; height:235px">
+                    <div class="row" style="margin:15px">
+                        <div class="col-lg-6" >
+                            <div class="card2 row" >
+                                <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class=card-date>12/21/2021</p>
+                                </div>
+                                <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p  class="card-title">Awards Dinner</p>
+                                </div>
                             </div>
-                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                <p  class="card-title">Awards Dinner</p>
+                        </div>
+                        <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Description: </strong>Christmas dinner ceremony where awards are given. No casual/work clothes allowed. All proceeds go to charity.
+                                </p>
+                                <p>
+                                    <strong>Price: </strong>35$
+                                </p>
+                            </div>
+                            <div class="vertical" style="height:170px"></div>
+                            <div class="col-lg-5">
+                                <strong>Category:</strong>
+                                <div style="margin-top:15px">
+                                    <ul>
+                                        <li>Food</li>
+                                        <li>Party</li>
+                                        <li>Charity</li>
+                                    </ul>
+                                </div>
+                                
+                    
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
-                        <div class="col-lg-6">
-                            <p>
-                                <strong>Description: </strong>Christmas dinner ceremony where awards are given. No casual/work clothes allowed. All proceeds go to charity.
-                            </p>
-                            <p>
-                                <strong>Price: </strong>35$
-                            </p>
-                        </div>
-                        <div class="vertical" style="height:170px"></div>
-                        <div class="col-lg-5">
-                            <strong>Category:</strong>
-                            <div style="margin-top:15px">
-                                <ul>
-                                    <li>Food</li>
-                                    <li>Party</li>
-                                    <li>Charity</li>
-                                </ul>
-                            </div>
-                            
-                
-                        </div>
-                    </div>
 
-                    
-
-                        
-                    
                 </a>
 
-                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
-                    <div class="col-lg-6">
-                        <div class="card3 row" >
-                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                <p class=card-date>12/21/2021</p>
-                            </div>
-                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                <p  class="card-title">Presentation</p>
+                <a href="ViewEvent.html" class=" hov row" style="margin:25px;color: black; text-decoration: none; height:235px">
+                    <div class="row" style="margin:15px">
+                        <div class="col-lg-6" style="width:209px" >
+                            <div class="card3 row" >
+                                <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class=card-date>12/21/2021</p>
+                                </div>
+                                <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p  class="card-title">Presentation</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
-                        <div class="col-lg-6">
-                            <p>
-                                <strong>Description: </strong>Students present their projects in front of investors and other attendees.
-                            </p>
-                            <p>
-                                <strong>Price: </strong>Free
-                            </p>
-                        </div>
-                        <div class="vertical" style="height:170px"></div>
-                        <div class="col-lg-5">
-                            <strong>Category:</strong>
-                            <div style="margin-top:15px">
-                                <ul>
-                                    <li>Student Organized</li>
-                                </ul>
+                        <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Description: </strong>Students present their projects in front of investors and other attendees.
+                                </p>
+                                <p>
+                                    <strong>Price: </strong>Free
+                                </p>
                             </div>
-                            
-                
-                        </div>
-                    </div>
-
+                            <div class="vertical" style="height:170px"></div>
+                            <div class="col-lg-5">
+                                <strong>Category:</strong>
+                                <div style="margin-top:15px">
+                                    <ul>
+                                        <li>Student Organized</li>
+                                    </ul>
+                                </div>
+                                
                     
-
-                        
-                    
+                            </div>
+                        </div>
+                    </div> 
                 </a>
 
-                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
-                    <div class="col-lg-6">
-                        <div class="card4 row">
-                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                <p class=card-date>12/21/2021</p>
-                            </div>
-                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                <p  class="card-title">Concert</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
-                        <div class="col-lg-6">
-                            <p>
-                                <strong>Description: </strong>Concert organized by SF State students. Artists TBA
-                            </p>
-                            <p>
-                                <strong>Price: </strong>$20
-                            </p>
-                        </div>
-                        <div class="vertical" style="height:170px"></div>
-                        <div class="col-lg-5">
-                            <strong>Category:</strong>
-                            <div style="margin-top:15px">
-                                <ul>
-                                    <li>Concert</li>
-                                    <li>Party</li>
-                                    <li>Student Organized</li>
-                                </ul>
-                            </div>
-                            
-                
-                        </div>
-                    </div>
-
-                    
-
-                        
-                    
-                </a>
-
-                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
-                    <div class="col-lg-6">
-                        <div class="card5 row">
-                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                <p class=card-date>12/21/2021</p>
-                            </div>
-                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                <p  class="card-title">Festival</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
-                        <div class="col-lg-6">
-                            <p>
-                                <strong>Description: </strong>Winter Festival 2021. All types of music from EDM to Hip-Hop.
-                            </p>
-                            <p>
-                                <strong>Price: </strong>$55
-                            </p>
-                        </div>
-                        <div class="vertical" style="height:170px"></div>
-                        <div class="col-lg-5">
-                            <strong>Category:</strong>
-                            <div style="margin-top:15px">
-                                <ul>
-                                    <li>Concert</li>
-                                    <li>Party</li>
-                                </ul>
-                            </div>
-                            
-                
-                        </div>
-                    </div>
-
-                    
-
-                        
-                    
-                </a>
-
-                <a href="ViewEvent.html" class="row" style="margin:25px;color: black; text-decoration: none;">
-                    <div class="col-lg-6">
-                        <div class="card6 row">
+                <a href="ViewEvent.html" class="row hov" style="margin:25px;color: black; text-decoration: none;height:235px">
+                    <div class="row" style="margin:15px">
+                        <div class="col-lg-6" style="width:209px">
+                            <div class="card4 row">
                                 <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
                                     <p class=card-date>12/21/2021</p>
                                 </div>
                                 <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                    <p  class="card-title">Convention</p>
+                                    <p  class="card-title">Concert</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Description: </strong>Concert organized by SF State students. Artists TBA
+                                </p>
+                                <p>
+                                    <strong>Price: </strong>$20
+                                </p>
+                            </div>
+                            <div class="vertical" style="height:170px"></div>
+                            <div class="col-lg-5">
+                                <strong>Category:</strong>
+                                <div style="margin-top:15px">
+                                    <ul>
+                                        <li>Concert</li>
+                                        <li>Party</li>
+                                        <li>Student Organized</li>
+                                    </ul>
+                                </div>
+                                
+                    
+                            </div>
                         </div>
                     </div>
-                    <div class="row justify-content-between col-lg-6" style="margin-top:15px">
-                        <div class="col-lg-6">
-                            <p>
-                                <strong>Description: </strong>Technology convention organized by California Universities to show studies made in several fields.
-                            </p>
-                            <p>
-                                <strong>Price: </strong>$15
-                            </p>
-                        </div>
-                        <div class="vertical" style="height:170px"></div>
-                        <div class="col-lg-5">
-                            <strong>Category:</strong>
-                            <div style="margin-top:15px">
-                                <ul>
-                                    <li>Student Organized</li>
-                                </ul>
+                    
+
+                        
+                    
+                </a>
+
+                <a href="ViewEvent.html" class="row hov" style="margin:25px;color: black; text-decoration: none;height:235px">
+                    <div class="row" style="margin:15px">
+                        <div class="col-lg-6" style="width:209px">
+                            <div class="card5 row">
+                                <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                    <p class=card-date>12/21/2021</p>
+                                </div>
+                                <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                    <p  class="card-title">Festival</p>
+                                </div>
                             </div>
-                            
-                
                         </div>
+                        <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Description: </strong>Winter Festival 2021. All types of music from EDM to Hip-Hop.
+                                </p>
+                                <p>
+                                    <strong>Price: </strong>$55
+                                </p>
+                            </div>
+                            <div class="vertical" style="height:170px"></div>
+                            <div class="col-lg-5">
+                                <strong>Category:</strong>
+                                <div style="margin-top:15px">
+                                    <ul>
+                                        <li>Concert</li>
+                                        <li>Party</li>
+                                    </ul>
+                                </div>
+                                
+                    
+                            </div>
+                        </div>
+
                     </div>
 
+                        
                     
+                </a>
+
+                <a href="ViewEvent.html" class="row hov" style="margin:25px;color: black; text-decoration: none;height:235px">
+                    <div class="row" style="margin:15px">
+                        <div class="col-lg-6">
+                            <div class="card6 row">
+                                    <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                        <p class=card-date>12/21/2021</p>
+                                    </div>
+                                    <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                        <p  class="card-title">Convention</p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between col-lg-6" style="margin-top:15px">
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Description: </strong>Technology convention organized by California Universities to show studies made in several fields.
+                                </p>
+                                <p>
+                                    <strong>Price: </strong>$15
+                                </p>
+                            </div>
+                            <div class="vertical" style="height:170px"></div>
+                            <div class="col-lg-5">
+                                <strong>Category:</strong>
+                                <div style="margin-top:15px">
+                                    <ul>
+                                        <li>Student Organized</li>
+                                    </ul>
+                                </div>
+                                
+                    
+                            </div>
+                        </div>
+
+                    </div>
 
                         
                     
