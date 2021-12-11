@@ -7,12 +7,23 @@
 .navbar-custom .navbar-text {
     color:#FCE308;
 }
+
+
 a.hov:hover{
     border:grey;
     border-style:solid;
     border-width: 3px;
     border-radius:25px;
 }
+
+a.hov2:hover{
+    border:grey;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:25px;
+    background-color: grey;
+}
+
 .nav-link{
     color:#FCE308
 }
