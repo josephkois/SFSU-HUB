@@ -11,17 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../CSS/homepageCSS.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
 
-<body style="background-color: #E5E5E5;">
+<body style="background-color: #E5E5E5;" id="body">
 
     <!-- Optional JavaScript -->
+    <script src="../JS/PageFunctions.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -29,117 +34,60 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <!--<nav class="navbar fixed-top navbar-expand-lg ">
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
+    <!--NAVBAR START-->
+    <div id="ndblur">
+        <nav class="navbar fixed-top navbar-expand-lg ">
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
                 <span class="material-icons">
                     menu
-                    </span>
-                    
+                </span>
+
             </button>
-            <div class="collapse navbar-collapse row justify-content-between "style="background-color: #34328F;" id="navb">
+            <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F;"
+                id="navb">
                 <div class="col-4" id="navb">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="HomePage.html" style="font-weight: bold;">Home <span
+                                    class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Events <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../Pablo's Work/EventsPage.html">Events <span
+                                    class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Books<span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" style="font-weight: bold;">Housing<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="HousingPage.html">Housing<span class="sr-only"></span></a>
                         </li>
-        
+
                     </ul>
                 </div>
-                <div class="col-md-3" style="justify-content: end; background-color: #34328F;" id="navb" >
-                    <div style="float: right"id="navb">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"style="line-height: 65px;">
-                            <a class="navbar-brand" href="#">
-                                <span class="material-icons md-light md-24">help_outline</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active"style="line-height: 50px;">
-                            <a class="navbar-brand" href="#">
-                                (help)
-                            </a>
-                        </li>
-                        <li class="nav-item active"style="float:center">
-                            <a class="navbar-brand" href="#" style="line-height: 65px;">
-                                <span class="material-icons md-light md-24">settings</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active"style="float:center">
-                            <a class="navbar-brand" href="#" style="line-height:50px;">
-                                <img src="../Images/skyblueblk.png" alt="Avatar Logo" style="width:30px;"
-                                    class="rounded-pill">
-        
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"style="line-height:50px;color:white;">Username<span class="sr-only">(current)</span></a>
-                        </li>
-        
-                    </ul>
-                    </div>
+
+                <div class="col-md-5">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                            style="background-color: #e3e3e3; width: calc(.2*200vw);">
+
+                    </form>
                 </div>
-              </div>
-            
-        </nav>-->
-        
 
-        <!--NAVBAR START-->
-        <div>
-            <nav class="navbar fixed-top navbar-expand-lg ">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
-                    <span class="material-icons">
-                        menu
-                    </span>
-        
-                </button>
-                <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F;" id="navb">
-                    <div class="col-4" id="navb">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="HomePage.html"style="font-weight: bold;">Home <span class="sr-only"></span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="../Pablo's Work/EventsPage.html">Events <span class="sr-only"></span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Books<span class="sr-only"></span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="HousingPage.html" >Housing<span
-                                        class="sr-only"></span></a>
-                            </li>
-        
-                        </ul>
-                    </div>
-        
-                    <div class="col-md-5">
-                        <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" 
-                        style="background-color: #e3e3e3; width: calc(.2*200vw);">
-                        
-                      </form></div>
-
-                    <div class="col-md-3">
-                        <div >
-                            <div style="float: left;">
-                                <a class="navbar-brand" href="#" style="line-height: 45px;">
-                                    <span class="material-icons md-light md-24"></span>
-                                </a>
-                            </div>
+                <div class="col-md-3">
+                    <div>
+                        <div style="float: left;">
+                            <a class="navbar-brand" href="#" style="line-height: 45px;">
+                                <span class="material-icons md-light md-24"></span>
+                            </a>
+                        </div>
                         <div style="float: left;position: absolute; right: 85px;">
                             <a class="navbar-brand" href="#" style="line-height: 45px;">
                                 <span class="material-icons md-light md-24">help_outline</span>
@@ -151,292 +99,217 @@
                             </a>
                         </div>
                         <div style="float: left; position: absolute; right:0;">
-                            <a class="nav-link" href="#" style="line-height:30px;color:#FCE308; padding-left: 0;">Login<span
-                                class="sr-only">(current)</span></a>
+                            <a class="nav-link" onclick="login('home')"
+                                style="line-height:30px;color:#FCE308; padding-left: 0;">Login<span
+                                    class="sr-only">(current)</span></a>
                         </div>
                     </div>
-                    </div>
-              
                 </div>
-        
-            </nav>
-        <!--<nav class="navbar fixed-top navbar-expand-lg ">
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
-                <span class="material-icons">
-                    menu
-                    </span>
-                    
-            </button>
-            <div class="collapse navbar-collapse row justify-content-between "style="background-color: #34328F;" id="navb">
-                <div class="col-4" id="navb">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home  </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Events  </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Books </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#" >Housing </a>
-                        </li>
-        
-                    </ul>
-                </div>
-                <div class="col-md-5"><form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #e3e3e3;">
-                        
-                      </form></div>
-                <div class="col-md-3" style="justify-content: end; background-color: #34328F;" id="navb" >
-                   
-                    <div style="float: right"id="navb"> 
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"style="line-height: 65px;">
-                            <a class="navbar-brand" href="#">
-                                <span class="material-icons md-light md-24">help_outline</span>
-                            </a>
-                        </li>
-                       
-                        <li class="nav-item active"style="float:center">
-                            <a class="navbar-brand" href="#" style="line-height: 65px;">
-                                <span class="material-icons md-light md-24">settings</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active"style="float:center">
-                            <a class="navbar-brand" href="#" style="line-height:50px;">
-                                <img src="../Images/skyblueblk.png" alt="Avatar Logo" style="width:30px;"
-                                    class="rounded-pill">
-        
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"style="line-height:40px;color:;">Login </a>
-                        </li>
-        
-                    </ul>
-                    </div>
-                </div>
-              </div>
-            
-        </nav>-->
-<!--NAVBAR END-->    
 
-<!--JUMBOTRON START-->
-<div>
-        <div class="jumbotron jumbotron-fluid" style="margin-top:50px;height: calc(0.2 * 120vw);" id="grad">
-            <div style="padding-top: 20px;">
-                <div style="padding-top: 20px; padding-right: 20px;right: 0; position: absolute;"> 
-                    <h1 class="display-4" style="color: #FCE308; font-weight: bold;">Gator Companions</h1>
-                <p class="lead" style="color: white; right:0; position: absolute; padding-right: 20px;">SF State hub for housing, books, and events
-                </p>
-            </br>
-        </br>
-        <div style="padding-right: 20px;right:0; position: absolute;"><button style=" background-color: #FCE308; border: 2px solid #34328F; color: #34328F;border-radius: 5px;">
-                    <p style="font-weight: bold; padding: 0 ;margin: 5px;">Get Started !</p></button></div>
-                </div>
-               
             </div>
-            <div>
-                <div class="row" id="rowt">
-                    <div class="col-md-12">
-                       
-                    </div>
-                    <div class="row row justify-content-around" style="margin-top: 15%;">
-                        
-                        <div class="col-md-3 bg-image  shadow-1-strong"
-                            style="background-color: #34328F;
-                            background-size: cover; padding: 10px;border-radius: 10px;">
-                            <a href="HousingPage.html"> 
-                            <div style="display: flex;justify-content: center;">
-                                <h2 style="color: #fff; font-weight: bold;font-size: calc(.1 * 40vw);">Housing</h2>
-                                </div>
-                                <div style="display: flex;justify-content: center;" >
-                                <span class="material-icons md-light" style="font-size: calc(.1 * 80vw);  color: #fff; ">
-                                    house
-                                    </span>
-                            </div>
-                            </a>
-                        </div>
 
+        </nav>
 
-                        <div class="col-md-3 bg-image  shadow-1-strong"
-                            style="background-color: #34328F;
-                            background-size: cover; padding: 10px;border-radius: 10px;">
-                            <div style="display: flex;justify-content: center;">
-                                <h2 style="color: #fff; font-weight: bold;font-size: calc(.1 * 40vw);">Books</h2>
-                            </div>
-                            <div style="display: flex;justify-content: center;" >
-                                <span class="material-icons md-light" style="font-size: calc(.1 * 80vw); color: #fff;">
-                                    auto_stories
-                                    </span>
-                               </div>                                                          
-                        </div>
+        <!--NAVBAR END-->
 
-                        <div class="col-md-3 bg-image  shadow-1-strong"
-                            style="background-color: #34328F;
-                            background-size: cover; padding: 10px; border-radius: 10px;">
-<a href="EventsPage.html">
-                            <div style="display: flex;justify-content: center;">
-                                <h2 style="color: #fff; font-weight: bold;font-size: calc(.1 * 40vw);">Events</h2>
-                            </div>
-                            <div style="display: flex;justify-content: center;"  >
-                                <span class="material-icons md-light " style="font-size: calc(.1 * 80vw);color: #fff; ">
-                                    calendar_month
-                                    </span>
-                               
-                            </div>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-<div style="margin-top: 15%;display: flex;
-justify-content: center;"> <span class="material-icons">
-            expand_more
-            </span></div>
-       
-            
-<!--JUMBOTRON END-->
-    <div class="container" style="margin-top:5%; "id="homecontainer">
-
-       
-
-
-        
-        <!--end of the div for the big image on the homepage-->
-
+        <!--JUMBOTRON START-->
         <div>
-            <div class="row" id="row3">
-                <div class="col-md-12 ">
-                    <p class="htitle" style="font-size: calc(0.2 * 10vw);">Lastest Events</p>
+            <div class="jumbotron jumbotron-fluid" style="margin-top:50px;height: calc(0.2 * 120vw);" id="grad">
+                <div style="padding-top: 20px;">
+                    <div style="padding-top: 20px; padding-right: 20px;right: 0; position: absolute;">
+                        <h1 class="display-4" style="color: #FCE308; font-weight: bold;font-family: 'Alfa Slab One', cursive;">GATOR COMPANION</h1>
+                        <p class="lead" style="color: white; right:0; position: absolute; padding-right: 20px;">SF State
+                            hub for housing, books, and events
+                        </p>
+                        </br>
+                        </br>
+                        <div style="padding-right: 20px;right:0; position: absolute;"><button
+                                style=" background-color: #FCE308; border: 2px solid #34328F; color: #34328F;border-radius: 5px;">
+                                <p style="font-weight: bold; padding: 0 ;margin: 5px;">Get Started !</p>
+                            </button></div>
+                    </div>
+
                 </div>
-                <div class="row " style="display: flex; align-items: center;width: 100%;">
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('https://miro.medium.com/max/1400/1*ydhn1QPAKsrbt6UWfn3YnA.jpeg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
+                <div>
+                    <div class="row" id="rowt">
+                        <div class="col-md-12">
 
-                           
                         </div>
-                    </div>
+                        <div class="row row justify-content-around" style="margin-top: 15%;">
 
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkS_l2dbA8P5Hv5BCwfoRQEsopPMuUQhFkCA&usqp=CAU');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
-                            
-                        </div>
-                    </div>
+                            <div class="col-md-3 bg-image  shadow-1-strong" style="background-color: #34328F;
+                            background-size: cover; padding: 10px;border-radius: 10px;">
+                                <a href="HousingPage.html">
+                                    <div style="display: flex;justify-content: center;">
+                                        <h2 style="color: #fff; font-weight: bold;font-size: calc(.1 * 40vw);">Housing
+                                        </h2>
+                                    </div>
+                                    <div style="display: flex;justify-content: center;">
+                                        <span class="material-icons md-light"
+                                            style="font-size: calc(.1 * 80vw);  color: #fff; ">
+                                            house
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
 
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('https://images.squarespace-cdn.com/content/v1/55c37beae4b0336075603f86/1443039469134-E9SLQBQ2OW1Y69KPKFDO/image-asset.jpeg?format=2500w');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
-                            
+
+                            <div class="col-md-3 bg-image  shadow-1-strong" style="background-color: #34328F;
+                            background-size: cover; padding: 10px;border-radius: 10px;">
+                                <div style="display: flex;justify-content: center;">
+                                    <h2 style="color: #fff; font-weight: bold;font-size: calc(.1 * 40vw);">Books</h2>
+                                </div>
+                                <div style="display: flex;justify-content: center;">
+                                    <span class="material-icons md-light"
+                                        style="font-size: calc(.1 * 80vw); color: #fff;">
+                                        auto_stories
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 bg-image  shadow-1-strong" style="background-color: #34328F;
+                            background-size: cover; padding: 10px; border-radius: 10px;">
+                                <a href="EventsPage.html">
+                                    <div style="display: flex;justify-content: center;">
+                                        <h2 style="color: #fff; font-weight: bold;font-size: calc(.1 * 40vw);">Events
+                                        </h2>
+                                    </div>
+                                    <div style="display: flex;justify-content: center;">
+                                        <span class="material-icons md-light "
+                                            style="font-size: calc(.1 * 80vw);color: #fff; ">
+                                            calendar_month
+                                        </span>
+
+                                    </div>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <!--end of the div for the events row on the homepage-->
+        </div>
+        <div style="margin-top: 15%;display: flex;justify-content: center;">
+             <img src="../Images/CSC642photo/downarrow.png"/>
+        </div>
 
-            <div class="row" id="row3"style="padding-right: 0;">
-                <div class="col-md-12">
-                    <p class="htitle" style="font-size: calc(0.2 * 10vw);">Most Viewed Housing</p>
+
+        <!--JUMBOTRON END-->
+        <div class="container" style="margin-top:5%; " id="homecontainer">
+
+
+
+
+
+            <!--end of the div for the big image on the homepage-->
+
+            <div>
+                <div class="row" id="row3">
+                    <div class="col-md-12 ">
+                        <p class="htitle" style="font-family: 'Alfa Slab One', cursive;font-size: calc(0.2 * 10vw);">Lastest Events</p>
+                    </div>
+                    <div class="col " style="display: flex; align-items: center;width: 100%;">
+                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('https://miro.medium.com/max/1400/1*ydhn1QPAKsrbt6UWfn3YnA.jpeg');
+                        background-size: cover;">
+                            <div class="card-body text-white">
+                                <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
+                            </div>
+                        </div>
+
+                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkS_l2dbA8P5Hv5BCwfoRQEsopPMuUQhFkCA&usqp=CAU');
+                        background-size: cover;">
+                            <div class="card-body text-white">
+                                <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
+                            </div>
+                        </div>
+
+                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('https://images.squarespace-cdn.com/content/v1/55c37beae4b0336075603f86/1443039469134-E9SLQBQ2OW1Y69KPKFDO/image-asset.jpeg?format=2500w');
+                        background-size: cover;">
+                            <div class="card-body text-white">
+                                <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row " style="display: flex; align-items: center;width: 100%;">
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
+                <!--end of the div for the events row on the homepage-->
+
+                <div class="row" id="row3" style="padding-right: 0;">
+                    <div class="col-md-12">
+                        <p class="htitle" style="font-family: 'Alfa Slab One', cursive;font-size: calc(0.2 * 10vw);">Most Viewed Housing</p>
+                    </div>
+                    <div class="col " style="display: flex; align-items: center;width: 100%;">
+                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
                         background-size: cover; ">
-                        <div class="card-body text-white">
-                            <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>
+                            <div class="card-body text-white">
+                                <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
+                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
                         background-size: cover;">
-                        <div class="card-body text-white">
-                            <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>                           
+                            <div class="card-body text-white">
+                                <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
+                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
                         background-size: cover; ">
-                        <div class="card-body text-white">
-                            <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>                           
+                            <div class="card-body text-white">
+                                <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!--end of the div for the housing row on the homepage-->
+
+                <div class="row" id="row3">
+                    <div class="col-md-12">
+                        <p class="htitle" style="font-family: 'Alfa Slab One', cursive;font-size: calc(0.2 * 10vw);">Most Viewed Books</p>
+                    </div>
+                    <div class="col " style="display: flex; align-items: center;width: 100%;">
+                        <div class="col bg-image cardb shadow-1-strong" >
+                            <img src="../Images/CSC642photo/physicsbook.png" >
+                            <div style="float:right;">
+                                <h2>Book Title</h2>
+                                <p style="margin: 0;">Author: XXXXX</p>
+                                <p style="margin: 0;">Publisher: XXXX</p>
+                                <p style="margin: 0;">Description: XXXXXX </br>XXXXX XXXXXX</p>
+                                <h3>$$$$$</h3>
+                            </div>
+                        </div>
+
+                        <div class="col bg-image cardb shadow-1-strong" >
+                            <img src="../Images/CSC642photo/designbook.png"  >
+                            <div style="float:right;">
+                                <h2>Book Title</h2>
+                                <p style="margin: 0;">Author: XXXXX</p>
+                                <p style="margin: 0;">Publisher: XXXX</p>
+                                <p style="margin: 0;">Description: XXXXXX </br>XXXXX XXXXXX</p>
+                                <h3>$$$$$</h3>
+                            </div>
+                        </div>
+
+                        <div class="col bg-image cardb shadow-1-strong" >
+                            <img src="../Images/CSC642photo/memorybook.png"  >
+                            <div style="float:right; ">
+                                <h2>Book Title</h2>
+                                <p style="margin: 0;">Author: XXXXX</p>
+                                <p style="margin: 0;">Publisher: XXXX</p>
+                                <p style="margin: 0;">Description: XXXXXX </br>XXXXX XXXXXX</p>
+                                <h3>$$$$$</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of the div for the books row on the homepage-->
+
+
             </div>
-            <!--end of the div for the housing row on the homepage-->
-
-            <div class="row" id="row3">
-                <div class="col-md-12">
-                    <p class="htitle" style="font-size: calc(0.2 * 10vw);">Most Viewed Books</p>
-                </div>
-                <div class="row "style="display: flex; align-items: center;width: 100%;">
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                               
-                            </p>
-                            
-                        </div>
-                    </div>
-
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                              
-                            </p>
-                            
-                        </div>
-                    </div>
-
-                    <div class="col bg-image cardh shadow-1-strong"
-                        style="background-image: url('https://mdbootstrap.com/img/new/slides/003.jpg');
-                        background-size: cover;">
-                        <div class="card-body text-white">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">
-                               
-                            </p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end of the div for the books row on the homepage-->
-            <div class="row" style="height: 100px;">
-                <div class="col-12">
-                    <div></div>
-                </div>
-                <div class="row">
-
-                </div>
-            </div>
+            <!--end of the div for the 3 rows of events, books, housing on the home page-->
 
         </div>
-        <!--end of the div for the 3 rows of events, books, housing on the home page-->
-
+        <!--last div from container-->
     </div>
-    <!--last div from container-->
-</div>
 </body>
 
 </html>
