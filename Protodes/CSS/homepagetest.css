@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+/*------------------------*/
+/*-BEGIN STYLE FOR NAVBAR-*/
+/*------------------------*/
+.navbar {
+    margin-top: 0px;
+    width: calc(100% - 72px);
+    padding-top: 0;
+    margin-left: 2%;
+}
+
+/*---------------------------------*/
+/*-BEGIN STYLE FOR SPLASH GRADIENT-*/
+/*---------------------------------*/
+.jumbotron {
+    margin-bottom: 3%;
+    background-image: linear-gradient(to bottom right, #FBF560, #7E2986);
+    padding: 1%;
+    margin-top: 0px;
+    height: calc(0.2 * 200vw);
+    border-radius: 20px;
+}
+
+.jumbotron img {
+    margin-left:calc(0.2 30vw);
+    margin-right:calc(0.2 20vw);
+    left:calc(0.2 30vw);
+    position: absolute;
+    height:calc(0.2 * 200vw) ;
+    margin-bottom: 3%;
+}
+.container-fluid {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 75px;
+}
+
+.jumbotron .vector_image {
+    margin-left: 10%;
+    margin-bottom: 25%;
+}
+
+/*-----------------------------*/
+/*-BEGIN STYLE FOR SPLASH TEXT-*/
+/*-----------------------------*/
+.jumbotron .title_thin {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 200;
+    text-align: left;
+}
+
+.jumbotron .title_thick {
+    font-family: "Montserrat", sans-serif;
+    font-size: 38px;
+    font-weight: 1000;
+    text-align: left;
+    line-height: 40px;
+    margin-top: -20px;
+}
+
+.jumbotron .flavor_text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 350;
+    text-align: left;
+    line-height: 20px;
+    margin-top: -10px;
+}
+
+.jumbotron .jumbotron_text {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.jumbotron .learn_more_btn button {
+    padding: 9px 25px;
+    background-image: linear-gradient(to top left, #FBF560, #7E2986);
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*------------------------------*/
+/*-BEGIN STYLE FOR MAIN BUTTONS-*/
+/*------------------------------*/
+.row .col-md-4 .h2 {
+    color: #000; 
+    font-size: calc(.1 * 30vw);
+    font-family: "Montserrat", sans-serif;
+}
+
+.row .col-md-4 a {
+    text-decoration: none;
+}
+
+.butbox {
+    margin-left: 1%;
+    margin-right:1%;
+    background-color: #E9E7EA;
+    background-size: cover;
+    padding: 10px; 
+    border-radius: 12px;
+}
+
+a {
+    text-decoration: "none";
+}

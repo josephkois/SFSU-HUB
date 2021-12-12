@@ -40,14 +40,14 @@ header {
 }
 
 .nav__links li a:hover {
-    color: gold;
+    color: rgb(195, 169, 70);
 }
 
 button {
     padding: 9px 25px;
     background-color: rgb(40, 40, 153);
     border: none;
-    border-radius: 50px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: white;
@@ -57,5 +57,263 @@ button {
 }
 
 button:hover {
-    background-color: rgba(181, 184, 0, 0.8)
+    background-color: rgba(195, 169, 70, 0.8)
+}
+
+/* ------------------------------ */
+/* - BEGIN STYLE FOR ABOUT PAGE - */
+/* ------------------------------ */
+.sfsu_logo {
+    border-radius: 12px 0px 0px 12px;
+    position: absolute;
+    right: 0%;
+    top: 300px;
+    
+}
+
+.bold_text_about {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    position: absolute;
+    left: 180px;
+    top: 300px;
+}
+
+.thin_text_about {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    left: 180px;
+    top: 530px;
+}
+
+.getstarted {
+    position: absolute;
+    left: 180px;
+    top: 650px;
+}
+
+/* ------------------------------------- */
+/* - BEGIN STYLE FOR HOW IT WORKS PAGE - */
+/* ------------------------------------- */
+.howitworks_text {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    top: 10%;
+    left: 38%;
+}
+
+.access_and_discover_content .access_and_discover_card {
+    float: left;
+    margin: 0% 6%;
+    max-height: 25em;
+    padding-top: 20em;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 148px;
+    top: 165px;
+    width: 18%;
+    vertical-align: center;
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list_ads_content .list_ads_card {
+    float: left;
+    margin: 0% 6%;
+    max-height: 35em;
+    padding-top: 20em;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 70px;
+    top: 165px;
+    width: 18%;
+    height: calc(0.2 * 50vw);
+    vertical-align: center;
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.account_content .account_card {
+    float: left;
+    margin: 0% 6%;
+    max-height: 35em;
+    padding-top: 20em;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    top: 165px;
+    width: 18%;
+    height: calc(0.2 * 50vw);
+    vertical-align: center;
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.design_content .design_card {
+    float: left;
+    margin: 0% 6%;
+    max-height: 35em;
+    padding-top: 20em;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 145px;
+    top: 250px;
+    width: 18%;
+    height: calc(0.2 * 50vw);
+    vertical-align: center;
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.safety_content .safety_card {
+    float: left;
+    margin: 0% 6%;
+    max-height: 35em;
+    padding-top: 20em;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 70px;
+    top: 250px;
+    width: 18%;
+    height: calc(0.2 * 50vw);
+    vertical-align: center;
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    
+.free_content .free_card {
+    float: left;
+    margin: 0% 6%;
+    max-height: 35em;
+    padding-top: 20em;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    top: 250px;
+    width: 18%;
+    height: calc(0.2 * 50vw);
+    vertical-align: center;
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Begin style for title text */
+.access_and_discover_content .access_and_discover_title {
+    text-align: center;
+    top: 40%;
+    left: 6%;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+}
+
+.list_ads_content .list_ads_title {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    color: #000000;
+}
+
+.account_content .account_title {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    padding: 0; margin: 0
+}
+
+.design_content .design_title {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    padding: 0; margin: 0
+}
+
+.safety_content .safety_title {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    padding: 0; margin: 0
+}
+
+.free_content .free_title {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    padding: 0; margin: 0
+}
+
+/* begin style for paragraph text */
+.access_and_discover_content .access_and_discover_para {
+    top: 5%;
+}
+
+.access_and_discover_content .access_and_discover_content .access_and_content_icon i {
+    height: 50px; 
+    width: 50px;
+    top: 0; 
+    position: absolute;
+}
+
+#accessh3 {
+    text-align: center;
+}
+
+#listh5 {
+    text-align: center;
+    right: 20px;
+    font-size: 14px;
 }
