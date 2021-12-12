@@ -172,6 +172,180 @@ function cancelled(){
 }
 
 //to redirect to the view when user clicks on a card
-function vcardhome(picurl){
+
+//bname = the page name so it gets linked to back button
+//picurl = picture url
+function vcardhome(bname, picurl){
+    let cont = document.getElementById('body');
+    cont.innerHTML =
+     `<div id="ndblur">
+     <nav class="navbar fixed-top navbar-expand-lg ">
+         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+             data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
+             <span class="material-icons">
+                 menu
+             </span>
+ 
+         </button>
+         <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F;" id="navb">
+             <div class="col-4" id="navb">
+                 <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                         <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item active">
+                         <a class="nav-link" href="../Pablo's Work/EventsPage.html">Events <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item active">
+                         <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item active">
+                         <a class="nav-link" href="HousingPage.html" style="font-weight: bold;">Housing<span
+                                 class="sr-only">(current)</span></a>
+                     </li>
+ 
+                 </ul>
+             </div>
+ 
+             <div class="col-md-3">
+                 <div >
+                     <div style="float: left;">
+                         <a class="navbar-brand" href="#" style="line-height: 45px;">
+                             <span class="material-icons md-light md-24"></span>
+                         </a>
+                     </div>
+                 <div style="float: left;position: absolute; right: 170px;">
+                     <a class="navbar-brand" href="#" style="line-height: 45px;">
+                         <span class="material-icons md-light md-24">help_outline</span>
+                     </a>
+                 </div>
+                 <div style="float: left;position: absolute; right: 130px;">
+                     <a class="navbar-brand" href="#" style="line-height: 45px;">
+                         <span class="material-icons md-light md-24">settings</span>
+                     </a>
+                 </div>
+                 <div style="float: left;position: absolute; right: 80px;">
+                     <a class="navbar-brand" href="#" style="line-height:30px;">
+                         <img src="../Images/skyblueblk.png" alt="Avatar Logo" style="width:30px;"
+                             class="rounded-pill">
+ 
+                     </a>
+                 </div>
+                 <div style="float: left; position: absolute; right:0;">
+                     <a class="nav-link" href="#" style="line-height:30px;color:white; padding-left: 0;">Username<span
+                         class="sr-only">(current)</span></a>
+                 </div>
+             </div>
+             </div>
+       
+         </div>
+ 
+     </nav>
+
+
+<div class="container" style="margin-top: 100px;padding-left: calc(0.2*30vw);padding-right: calc(0.2*30vw); ">
+ <div>
+<div class="row">
+  <div class="col-md-8">
+      <div style="box-shadow: inset 0px -30px 20px  rgba(0,0,0,0.8); 
+      background-size:cover;height: calc(.2*130vw); width: calc(0.2*260vw); border-radius: 7px;
+      background-image: url(${picurl});">
+         <h2 style="color: white; bottom: 0;position: absolute; margin-left: 50px;">Title</h2>
+      </div>
     
+  </div>
+  <div class="col-md-4">
+     <img src="../Images/CSC642photo/housingroom1.png"style="height: calc(.2*65vw); width: calc(0.2*110vw);"/>
+     <div style="box-shadow: inset 0px -30px 20px  rgba(0,0,0,0.8); 
+     background-image: url(../Images/CSC642photo/housingroom2.png);
+     background-size: cover;height: calc(.2*65vw); width: calc(0.2*110vw);
+     border-radius: 7px;">
+     <h4 style="bottom: 0;position: absolute; margin-left: 50px; color:#fff;">+ More Images</h4>
+       </div>
+    
+  </div>
+</div>
+<div class="row" style="padding: 5% 1%">
+ 
+  <div class="col-md-5">
+     <div style="border-bottom: 2px solid black;border-right: 2px solid black;">
+         <p style="font-weight: bold;">Address: XXXXXX</p>
+         <p style="font-weight: bold;">Apartment: A</p>
+         <p style="font-weight: bold;" >Postal Code: 12345</p>
+     </div>
+     <div style="border-right: 2px solid black;"> 
+         <p style="padding-top: 3%;font-weight: bold;">Description:</p>
+         <p style="font-weight: bold;" >
+             XXXXXXXXXXXXXXXXXXXXXX
+             XXXXXXXXXXXXXXXXXXXXXX
+             XXXXXXXXXXXXXXXXXXXXXX
+         </p>
+     </div>
+  </div>
+
+  <div class="col">
+     <div>
+         <h5>Special Tags</h5>
+         <div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label" for="defaultCheck1">
+                     Single
+                 </label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label" for="defaultCheck1">
+                     Pet Friendly
+                 </label>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                 <label class="form-check-label" for="defaultCheck1">
+                     Party Friendly
+                 </label>
+             </div>
+         </div>
+     </div>
+     <div style="border: 2px solid black;border-radius: 10px; position:absolute; 
+     bottom: 0;
+     right:0;
+     padding-top: 10px;
+     padding-left: 10px;
+     padding-bottom: 10px;
+     padding-right: 40px;">
+     <p style="font-weight: bold;">Rent</p>
+     <h5 style="font-weight: bold; font-size: large;">$ 835.75/mo</h5>
+ </div>
+     <div>
+
+     </div>
+  </div>
+</div>
+
+ <div class="row justify-content-around" style="margin-bottom: 20px;">
+     <div style="text-align: center;">
+     <a href= "${bname}">
+         <button type="button" class="btn-sm" id="regbut" style="height:40px; padding:0;">
+           <p style="padding:0; margin:0; font-size: 20px;">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           </p>
+         </button></a>
+       </div>
+       <a onclick="confirmation('HousingPage')">
+       <div style="text-align: center;">
+         <button type="button" class="btn-sm" id="loginbut" style="height:40px; padding:0;">
+           <p style="padding:0; margin:0; font-size: 20px;">
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           </p>
+         </button>
+       </div></a>
+ </div>
+
+</div>
+</div>
+
+
+</div>`;
+
 }
