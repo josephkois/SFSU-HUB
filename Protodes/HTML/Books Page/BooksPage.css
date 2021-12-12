@@ -1,0 +1,237 @@
+.navbar-custom {
+    background-color:#34328F;
+}
+a:hover{
+    color:white;
+}
+
+/* Modify brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color:#FCE308;
+}
+
+
+a.hov:hover{
+    border:grey;
+    border-style:solid;
+    border-width: 3px;
+    border-radius:25px;
+}
+
+a.hov2:hover{
+    border:grey;
+    border-style:solid;
+    border-width: 5px;
+    border-radius:25px;
+    background-color: lightgrey;
+    font-weight:bolder;
+}
+
+.hov3:hover{
+    color:white;
+    background-color: black;
+}
+
+.hov4:hover{
+   
+    background-color: white;
+    color:#34328F;
+    border-width: 10px;
+    border-style:solid;
+    border-color:#34328F;
+}
+
+.hov4{
+    background-color:#34328F;
+    height:75px;
+    text-align:center;
+    
+}
+
+.hov5:hover{
+   
+    background-color: white;
+    color:#34328F;
+    border-width: 3px;
+    border-style:solid;
+    border-color:#34328F;
+}
+
+.hov5{
+    background-color:#34328F;
+    height:75px;
+    text-align:center;
+    
+}
+
+
+.nav-link{
+    color:#FCE308
+}
+
+.my-circle{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.separate{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.searchbar{
+  
+   
+    margin-left: 20px;
+    margin-right: 20px;
+   
+}
+
+.searchEventButton{
+    background-color:#34328F;
+    height: 40px;
+}
+.my-row{
+    margin-top:50px;
+}
+.vertical {
+    border-left: 2px solid black;
+    height:auto;
+    margin-bottom: 50px;
+    
+}
+
+div.outlined{
+    border-width:2px;
+    border-color:rgb(230, 230, 230);
+    border-style:solid;
+    border-radius: 25px;
+    margin-left:10px;
+}
+
+div.outlined2{
+    border-width:2px;
+    border-color:rgb(230, 230, 230);
+    border-style:solid;
+    border-radius: 25px;
+}
+
+div.card1{
+    background-image: url('https://miro.medium.com/max/1400/1*ydhn1QPAKsrbt6UWfn3YnA.jpeg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+div.book1{
+    background-image: url('https://edit.org/images/cat/book-covers-big-2019101610.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+
+div.book2{
+    background-image: url('https://img.wattpad.com/cover/85999419-352-k567876.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+
+div.book3{
+    background-image: url('https://www.adobe.com/express/create/media_1d6b5adcdb535134046ad6f531d7077a587e1c92b.jpeg?width=2000&format=webply&optimize=medium');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+
+div.book4{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5bcf9b808155126cb612f21c/1560791053716-G5WP885BLLVXFWLLU36R/Create+Awesome+Wattpad+Covers+the+Easy+Way+%23amwriting+%23writingtips+%23wattpad+%23wattpadtip');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+
+div.book5{
+    background-image: url('https://pub-static.fotor.com/assets/projects/pages/17462d658d1349d5a6d279bdae9c334f_6f06e1d148ab49fca1b844cf0b621f50_thumb.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+
+div.book6{
+    background-image: url('https://i.pinimg.com/236x/c0/c0/95/c0c09510383f8805a2fd304370af0005--wattpad-covers-cover-design.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+
+div.card2{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkS_l2dbA8P5Hv5BCwfoRQEsopPMuUQhFkCA&usqp=CAU');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+}
+
+div.card3{
+    background-image: url('https://www.mediacominc.com/wp/wp-content/uploads/2014/03/business-events.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+}
+
+div.card4{
+    background-image: url('https://images.squarespace-cdn.com/content/v1/55c37beae4b0336075603f86/1443039469134-E9SLQBQ2OW1Y69KPKFDO/image-asset.jpeg?format=2500w');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+}
+
+div.card5{
+    background-image: url('https://popshap.com/wp-content/uploads/2018/02/event-management.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+}
+
+div.card6{
+    background-image: url('https://cdn.asp.events/CLIENT_Mash_Med_B34ADAB8_B232_86A9_C581AF1F81387A43/sites/International-Confex/media/pilot%203.jpeg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+}
+
+.top-shadow{
+    box-shadow:inset 0 30px 20px rgba(0,0,0,0.8);
+    clip-path:(-5px 0px -5px 0px);
+}
+
+.bottom-shadow{
+    box-shadow:inset 0 -50px 20px rgba(0,0,0,0.8);
+    clip-path:(-5px 0px -5px 0px);
+}
+
+.card-title {
+    position: absolute;
+    bottom: 0;
+    color:white;
+    margin-left:10px;
+    margin-top:10px;
+    font-weight: bold;
+    font-size:30px;
+}
+
+.card-date{
+    color:white;
+    margin-right:10px;
+    margin-top:10px;
+    text-align:right;
+    font-weight: bold;
+}

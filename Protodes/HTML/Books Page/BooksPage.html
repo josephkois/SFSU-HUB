@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Books Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="BooksPage.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </head>
+
+  <body id="body">
+     
+    <!-- Optional JavaScript -->
+    <script src="../JS/PageFunctions.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Navbar (not perfect)-->
+    <div id="ndblur">
+        <nav class="fixed-top navbar-expand-lg " style="margin-right:15px">
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
+                <span class="material-icons">
+                    menu
+                </span>
+    
+            </button>
+            <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F" id="navb">
+                <div class="col-4" id="navb" style="margin-left:15px">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Pablo's Work/EventsPage.html"  >Events <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" style="font-weight: bold;">Books<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="HousingPage.html" >Housing<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <div >
+                        <div style="float: left;">
+                            <a class="navbar-brand" href="#" style="line-height: 45px;">
+                                <span class="material-icons md-light md-24"></span>
+                            </a>
+                        </div>
+                    <div style="float: left;position: absolute; right: 170px;">
+                        <a class="navbar-brand" href="#" style="line-height: 45px;color:white">
+                            <span class="material-icons md-light md-24">help_outline</span>
+                        </a>
+                    </div>
+                    <div style="float: left;position: absolute; right: 130px;">
+                        <a class="navbar-brand" href="#" style="line-height: 45px;color:white">
+                            <span class="material-icons md-light md-24">settings</span>
+                        </a>
+                    </div>
+                    <div style="float: left;position: absolute; right: 80px;">
+                        <a class="navbar-brand" href="#" style="line-height:30px;">
+                            <img src="https://i1.wp.com/media.globalnews.ca/videostatic/353/499/oldestmanthumb.jpg?w=1040&quality=70&strip=all" alt="Avatar Logo" style="border-radius:50%;height:30px;width:30px;">
+    
+                        </a>
+                    </div>
+                    <div style="float: left; position: absolute; right:0;">
+                        <a class="nav-link" href="#" style="line-height:30px;color:white; padding-left: 0;">Username<span
+                            class="sr-only">(current)</span></a>
+                    </div>
+                </div>
+                </div>
+          
+            </div>
+    
+        </nav>
+    
+    
+    <div class="container separate">
+        <h1 style="font-family: Montserrat;">Buy and sell textbooks from other SF State students!</h1>
+    </div>
+    
+    <div class="row my-row" style="height: 50px; margin-left:2px">
+        <form class="form-inline col-lg-6 searchbar">
+            <input class="form-control mr-sm-2 col-md-12" id="search" type="Q search" placeholder="Search book title..."
+                aria-label="Search">
+        </form>
+        <div>
+            <a style="text-decoration: none" href="Eventspage-ViewAll.html">
+                <div class=" row col-lg-auto searchEventButton rounded-pill" style="margin-left: 100px;">
+                    <img  src="https://www.nicepng.com/png/full/303-3037570_eyequeue-white-eye-icon-transparent.png" alt="Eye icon" style="width:35px;height:20px;margin-top: 10px;">
+                    <p style="color:aliceblue;margin-left: 20px;margin-top:5px;font-size:20px;font-family:Montserrat">View all</p>
+                </div>
+            </a>
+        </div>
+       
+        <a style="text-decoration: none" onclick="login('Events')">
+            <div class="row col-lg-auto searchEventButton rounded-pill" style="margin-left:100px">
+                <img  src="https://icon-library.com/images/white-plus-icon/white-plus-icon-3.jpg" alt="Eye icon" style="width:20px;height:20px;margin-top: 10px;">
+                <p style="color:aliceblue;margin-left: 20px;margin-top:5px;font-size:20px;font-family:Montserrat">Sell a book</p>
+            </div>
+        </a>
+    </div>
+    <div class="row " style="margin-top:50px;margin-left:20px">
+        <div class="col-lg-3">
+            <strong><p style="font-size: 25px;font-family: Montserrat;">Filters</p></strong>
+            <div class="row">
+                
+
+                <div class="col-lg-11">
+                    <hr  style="width:300px;text-align: left;" size="30" noshade> 
+                    <p style="font-size: 15px;font-family: Montserrat;">Maximum Price</p>
+                    <div class= "row">
+                        <div class="input-group col-lg-9">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">$</span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-11">
+                    <hr  style="width:300px;text-align: left; " size="30" noshade> 
+                    <p style="font-size: 15px;font-family: Montserrat;">Category</p>
+                    <div class= "row">
+                        <div class="input-group col-lg-9">
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Sports
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Physics
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Art
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  History
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Geography
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Social Studies
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Law
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Economics
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Film
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Biology
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Chemistry
+                                </label>
+                            </div>
+                            <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Engineering
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-11">
+                    <hr  style="width:300px;text-align: left;" size="30" noshade> 
+                    <p style="font-size: 15px;font-family: Montserrat;">Course Number/Code</p>
+                    <div class= "row">
+                        <div class="input-group col-lg-9">
+                            <input type="text" class="form-control" placeholder="Ex. CSC645">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="vertical"></div>
+
+
+        <div class="col-lg-8" id="content" style="margin-left:20px;margin-bottom:100px">
+            <div >
+                <p style="font-family:Montserrat;font-size:25px">New Additions (showing 6 of 6)</p>
+                <div class="outlined">
+                    <div class="row" style="margin:20px;height:202px">
+
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book1">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 1
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Engineering
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $15
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book2">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 2
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Biology
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $25
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book3">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 3
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Geography
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $30
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                    <div class="row" style="margin:20px;height:202px">
+
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book4">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 4
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> History
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $55
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book5">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 5
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Law & History
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $25
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book6">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 6
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Physics
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $30
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                    
+
+
+                </div>
+
+
+            </div>
+            
+            <div style="margin-top:25px">
+                <p style="font-family:Montserrat;font-size:25px">Popular Books (showing 6 of 6)</p>
+                <div class="outlined">
+                    <div class="row" style="margin:20px;height:202px">
+
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book1">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 1
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Engineering
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $15
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book2">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 2
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Biology
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $25
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book3">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 3
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Geography
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $30
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                    <div class="row" style="margin:20px;height:202px">
+
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book4">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 4
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> History
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $55
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book5">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 5
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Law & History
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $25
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html" style="border-style:solid;border-color:grey; border-radius:25px;">
+                            <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                                <div class="col-lg-6 book6">
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                        Book 6
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                        <strong>Author: </strong> xx
+                                    </div>
+                                    <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                        <strong>Category: </strong> Physics
+                                    </div>
+                                    <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                        <strong>Price:</strong> $30
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                    
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <div class="row list-single" id="notAvailable" style="display: none;">
+            <div class="col-12">
+              <h5>Sorry, the book has not been added yet</h5>
+            </div>
+          </div>
+
+    </div>
+
+   
+    
+    </div>
+  </body>
+</html>
