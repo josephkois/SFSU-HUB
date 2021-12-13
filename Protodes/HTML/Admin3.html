@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>HousingPage</title>
+    <title>Admin Dashboard</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,154 +10,103 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/homepageCSS.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/admin2.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/admindash.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body background-color="white" id="body">
+<body>
 
-    <!-- Optional JavaScript -->
-    <script src="../JS/PageFunctions.js"></script>
-    <script>let pn = 'Housing';</script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script>
+        function remove() {
+        var element = document.getElementById("admin_card");
+        element.remove();
+        }
+    </script>
 
-
+    <header>
+        <!--NAVBAR START-->
         <div id="ndblur">
             <nav class="navbar fixed-top navbar-expand-lg ">
                 <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
+                data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
                     <span class="material-icons">
-                        menu
+                    menu
                     </span>
-        
                 </button>
-                <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F;" id="navb">
+                <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F;"
+                id="navb">
                     <div class="col-4" id="navb">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="HomePage.html">Home <span
+                                    class="sr-only"></span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="../Pablo's Work/EventsPage.html">Events <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Books<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="HousingPage.html" >Housing<span
-                                        class="sr-only"></span></a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="HousingPage.html" style="font-weight: bold;">Dashboard<span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                        </ul>
-                    </div>
-        
-                    <div class="col ">
-                        <div >
-                            <div style="float: left;">
-                                <a class="navbar-brand" href="#" style="line-height: 45px;">
-                                    <span class="material-icons md-light md-24"></span>
-                                </a>
-                            </div>
-                        <div style="float: left;position: absolute; right: 170px;">
+                                <a class="nav-link" href="../Pablo's Work/EventsPage.html">Events <span
+                                    class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Books<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="HousingPage.html">Housing<span class="sr-only"></span></a>
+                        </li>
+                        <li class ="nav-item active">
+                            <a class="nav-link" href="AdminDashboard2.html" style="font-weight: bold;" >Dashboard 
+                                <span class="sr-only"></span></a></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <div>
+                        <div style="float: left;">
+                            <a class="navbar-brand" href="#" style="line-height: 45px;">
+                                <span class="material-icons md-light md-24"></span>
+                            </a>
+                        </div>
+                        <div style="float: left;position: absolute; right: 85px;">
                             <a class="navbar-brand" href="#" style="line-height: 45px;">
                                 <span class="material-icons md-light md-24">help_outline</span>
                             </a>
                         </div>
-                        <div style="float: left;position: absolute; right: 130px;">
+                        <div style="float: left;position: absolute; right: 50px;">
                             <a class="navbar-brand" href="#" style="line-height: 45px;">
                                 <span class="material-icons md-light md-24">settings</span>
                             </a>
                         </div>
-                        <div style="float: left;position: absolute; right: 80px;">
-                            <a class="navbar-brand" href="#" style="line-height:30px;">
-                                <img src="../Images/skyblueblk.png" alt="Avatar Logo" style="width:30px;"
-                                    class="rounded-pill">
-        
-                            </a>
-                        </div>
                         <div style="float: left; position: absolute; right:0;">
-                            <a class="nav-link" href="#" style="line-height:30px;color:white; padding-left: 0;">Username<span
-                                class="sr-only">(current)</span></a>
+                            <a class="nav-link" onclick="login('home')"
+                                style="line-height:30px;color:#FCE308; padding-left: 0;">Admin<span
+                                    class="sr-only">(current)</span></a>
                         </div>
                     </div>
-                    </div>
-              
                 </div>
-        
-            </nav>
-<div class="container" style="background-color: #ECECEC;margin-top: 5%; padding: 3%;border-radius: 5px;">
-<div style="background-color: white;">
-<div class="row">
-<div class="col">
-    <div style="background-image: url(../Images/CSC642photo/books.png); background-size: cover; 
-    height:calc(0.2 * 90vw) ;width:calc(0.2 * 140vw) ;">
+            </div>
+    </header>
 
-    </div>
-    
-</div>
-
-<div class="col">
-<div style="background-color: #EFEFEF;height:calc(0.2 * 90vw) ;width:calc(0.2 * 140vw) ;">
-        <p>
-            Book Name: Physics</br>
-            Book Genre: Technology</br>
-            Book Seller: John Doe</br>
-            Department: Science</br>
-            Price: $10</br>
-            Email: doe@mail.sfsu.edu</br>
-            Contact: 669 609 001</br>
-            Description: Book is in pretty good shape, I took some notes inside the margins, but for the most part its in really good condition.
-        </p>
-    </div>
-</div>
-<div class="col">
-    <div style="background-color: #EFEFEF;height:calc(0.2 * 70vw) ;width:calc(0.2 * 100vw) ;">
-        <p>
-            Date of Submission: 11/10/2021</br>
-            Time of SUbmission: 9:49 AM</br>
-            Username: John Doe</br>
-            Account Creation Date: 09/02/2021</br>
-            Student ID: 92XXXXX13</br>
-            Total Submissions: 3</br>
-            Account Flags: 0</br>
-        </p>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div style="background-color: #CF0808;">
-                <p>Deny</p>
+    <!--BEGIN CARD HTML-->
+    <div id="admin_card" class="card mb-3" style="max-width: 1000px; max-height: 290px;">
+        <div class="row no-gutters">
+        <div id ="admin_card_image" class="col-md-4 img-fluid">
+            <img src="../Images/CSC642photo/books.png" class="card-img" alt="...">
+        </div>
+        <div id="admin_card_text_field" class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title">Physics Book</h5>
+            <p class="card-text">Book Name: Physics Textbook &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Date of Submission: 12/14/2021 <br> 
+            Book Genre: Science and Technology &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp; Time of Submission: 5:05PM <br>
+            Book Seller: John Doe &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Account Creation Date: 12/01/2021 <br>
+            Department: Science &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Student ID: 92XXX13 <br>
+            Email: jdoe@mail.sfsu.edu &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; Total Submissions: 3 <br> 
+            Contact: (224)-555-5555 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Account Flags: 0 <br>
+            Description: Book is in pretty good shape, <br> I took some notes in the margins but for the <br>
+            most part its in really good condition&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<button id="deny_btn" onclick="remove()">Deny</button>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;<button id="approve_btn" onclick="remove()">Approve</button></p>
             </div>
         </div>
-        <div class="col">
-            <div style="background-color: #04BD00;">
-                <p>Approve</p>
-            </div>
         </div>
     </div>
-</div>
-</div>
-</div>
-<div></div>
-</div>
 
-    
-
-
-</div>
 </body>
 
 </html>
