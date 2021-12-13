@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Create Book</title>
+    <title>Create Event</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-    <link rel="stylesheet" href="BooksPage.css">
+    <link rel="stylesheet" href="HousingPage.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
 
@@ -40,13 +40,13 @@
                             <a class="nav-link" href="HomePage.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="../Pablo's Work/EventsPage.html"  >Events <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../Pablo's Work/EventsPage.html" >Events <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#" style="font-weight: bold;">Books<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#" >Books<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="HousingPage.html" >Housing<span
+                            <a class="nav-link" href="HousingPage.html" style="font-weight: bold;" >Housing<span
                                     class="sr-only">(current)</span></a>
                         </li>
     
@@ -88,22 +88,21 @@
         </nav>
 
 
-
     </div>
 <div id="formbox">
     <div style="margin-top:100px;margin-left:100px">
         <div class="row">
-            <h class="col-lg-10" style="font-size:70px;font-family:Montserrat">Create Book</h>
+            <h class="col-lg-10" style="font-size:70px;font-family:Montserrat">Add a House</h>
         </div>
         <div class="row">
-            <hr  style="width:1500px;margin-right:30;height:4px" size="30" noshade> 
+            <hr  style="width:1500px;margin-left:0;height:4px" size="30" noshade> 
             
         </div>
         <form>
             <div class="row justify-content-between" style="margin-top:20px;margin-bottom:20px">
                 <div class="col-lg-4 form-group">
-                    <label for="exampleInputEmail1" style="font-weight:bold;font-family: Montserrat;">Book title*</label>
-                    <input style="border-width:2px" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter book title">
+                    <label for="exampleInputEmail1" style="font-weight:bold;font-family: Montserrat;">House *</label>
+                    <input style="border-width:2px" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter event title">
                     
                 </div>
                 
@@ -111,7 +110,7 @@
             </div>
 
                 
-            <p style="font-size: 15px;font-family: Montserrat;font-weight:bold;">Date of publishing</p>
+            <p style="font-size: 15px;font-family: Montserrat;font-weight:bold;">Date*</p>
             <div class= "row" style="margin-bottom:40px">
                 <div class="col-lg-1">
                         <select class="form-control form-control-sm" style="border-width:2px">
@@ -185,16 +184,21 @@
             <hr  style="width:1000px;margin-left:0;" size="30" noshade> 
             <div class="row" style="margin-bottom:20px;margin-top:30px">
                 <div class="col-lg-4 form-group">
-                    <label for="exampleInputEmail1" style="font-weight:bold;font-family: Montserrat;">Author Name</label>
-                    <input style="border-width:2px" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter author name">
+                    <label for="exampleInputEmail1" style="font-weight:bold;font-family: Montserrat;">Street*</label>
+                    <input style="border-width:2px" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter street">
                     
                 </div>
 
             </div>
-            <div class="row" style="margin-bottom:20px;margin-top:30px">
-                <div class="col-lg-4 form-group">
-                    <label for="exampleInputEmail1" style="font-weight:bold;font-family: Montserrat;">Author Surname</label>
-                    <input style="border-width:2px" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter author surname">
+            <div class="row">
+                <div class="col-lg-auto form-group">
+                    <label for="exampleInputEmail1" style="font-weight:bold;font-family: Montserrat;">Apartment Number</label>
+                    <input style="border-width:2px" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter apartment number">
+                    
+                </div>
+                <div class="col-lg-auto form-group" style:>
+                    <label for="exampleInputEmail1" style="font-weight:bold;font-family: Montserrat;">Postal Code*</label>
+                    <input style="border-width:2px" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex.12345">
                     
                 </div>
 
@@ -229,7 +233,7 @@
             <div class="row" style="margin-bottom:20px;margin-top:30px">
                 <div class="col-lg-4">
                     <p style="font-size: 15px;font-family: Montserrat;font-weight:bold">Category</p>
-                    <div class="input-group col-lg-9">
+                    <div class="input-group ">
                         <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
@@ -239,67 +243,31 @@
                         <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
-                              Physics
+                              Concert
                             </label>
                         </div>
                         <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
-                              Art
+                              Student Organized
                             </label>
                         </div>
                         <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
-                              History
+                              Party
                             </label>
                         </div>
                         <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
-                              Geography
+                              Food
                             </label>
                         </div>
                         <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                             <label class="form-check-label" for="defaultCheck1">
-                              Social Studies
-                            </label>
-                        </div>
-                        <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Law
-                            </label>
-                        </div>
-                        <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Economics
-                            </label>
-                        </div>
-                        <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Film
-                            </label>
-                        </div>
-                        <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Biology
-                            </label>
-                        </div>
-                        <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Chemistry
-                            </label>
-                        </div>
-                        <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Engineering
+                              Charity
                             </label>
                         </div>
                         
@@ -327,12 +295,12 @@
             </div>
 
             <div class="row justify-content-between align-items-end" style="margin:50px">
-                <a class="col-lg-2" href="BooksPage.html" style="text-decoration: none;color:black">
+                <a class="col-lg-2" href="EventsPage.html" style="text-decoration: none;color:black">
                    <div class="rounded-pill hov3" style="border-style:solid;border-color:black;font-family:Montserrat;font-size:20px;width:120px;text-align:center">
                    <p style="margin:10px">Cancel</p>
                     </div>
                 </a>
-                <a class="col-lg-2 " style="color:white;text-decoration: none;margin-right:450px;" href="BookConfirmation.html" >
+                <a class="col-lg-2 " style="color:white;text-decoration: none;margin-right:450px;" href="HousingConfirmation.html" >
                     <div class="row align-items-center rounded-pill hov4" style="font-weight:bold;font-size:30px;">
                         <p class="col-lg-12" style="margin:auto">Submit</p>
                     </div>
