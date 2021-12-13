@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     padding: 0;
     height: 50px;
     color:black;
@@ -7,16 +7,23 @@
 .navbar ul {
     margin: 0;
 }
-
-.nav-link{
+.navbar .col-md-3 a:hover{
     color: #FCE308;
 }
 
-.navbar-brand{
+.navbar .col-4{
+    color:#FCE308
+}
+
+.nav-link {
+    color: #FCE308;
+}
+
+.navbar-brand {
     color: white;
 }
 
-#row3{
+#row3 {
     background-color: #34328F;
     margin-bottom: 3%;
     padding: 1%;
@@ -25,7 +32,7 @@
     
 }
 
-.htitle{
+.htitle {
     color:#FCE308 ;
     font-weight: bold;
 }

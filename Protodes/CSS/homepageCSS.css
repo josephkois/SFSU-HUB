@@ -86,7 +86,7 @@
 }
 .cardb{
     background-size: cover;
-    background-color: #C4C4C4;
+    
     margin-right: 0px;
     width:calc(0.1 * 200vw) ;
     height: calc(0.1 * 140vw);
@@ -103,7 +103,7 @@
     color: #fff;
 }
 .cardb>img{
-    float:left;left:0; position: absolute; width:calc(0.2 * 55vw); height:100%; border-radius: 7px;
+     width:calc(0.2 * 55vw); height:100%; border-radius: 7px;
 
 }
 
@@ -122,12 +122,13 @@
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 15%;
-    background-color: #a5a1a7;
+    
     background-size: cover;
     padding: 3px; 
     border-radius: 12px;
     max-height: 150px;
-    display: block;
+    display: block;background-color: white;
+    border: 2px solid #34328F;
 }
 
 a {
@@ -136,7 +137,7 @@ a {
 }
 
 a:hover{
-    color:purple;
+    color:#34328F;
 }
 
 .herotxt{

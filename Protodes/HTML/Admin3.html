@@ -23,6 +23,13 @@
         }
     </script>
 
+    <script>
+        function removeTwo() {
+        var element = document.getElementById("admin_card_two");
+        element.remove()
+        }
+    </script>
+
     <header>
         <!--NAVBAR START-->
         <div id="ndblur">
@@ -38,18 +45,18 @@
                     <div class="col-4" id="navb">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="HomePage.html">Home <span
+                                <a class="nav-link" href="../HTML/HomePage.html">Home <span
                                     class="sr-only"></span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="../Pablo's Work/EventsPage.html">Events <span
+                                <a class="nav-link" href="../HTML/Events page/EventsPage.html">Events <span
                                     class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Books<span class="sr-only"></span></a>
+                            <a class="nav-link" href="../HTML/Books Page/BooksPage.html">Books<span class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="HousingPage.html">Housing<span class="sr-only"></span></a>
+                            <a class="nav-link" href="../HTML/Housing Page/HousingPage.html">Housing<span class="sr-only"></span></a>
                         </li>
                         <li class ="nav-item active">
                             <a class="nav-link" href="AdminDashboard2.html" style="font-weight: bold;" >Dashboard 
@@ -102,6 +109,27 @@
             Contact: (224)-555-5555 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Account Flags: 0 <br>
             Description: Book is in pretty good shape, <br> I took some notes in the margins but for the <br>
             most part its in really good condition&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<button id="deny_btn" onclick="remove()">Deny</button>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;<button id="approve_btn" onclick="remove()">Approve</button></p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="admin_card_two" class="card mb-3" style="max-width: 1000px; max-height: 290px;">
+        <div class="row no-gutters">
+        <div id ="admin_card_image" class="col-md-4 img-fluid">
+            <img src="../Images/CSC642photo/books.png" class="card-img" alt="...">
+        </div>
+        <div id="admin_card_text_field" class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title">Physics Book</h5>
+            <p class="card-text">Book Name: Physics Textbook &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Date of Submission: 12/14/2021 <br> 
+            Book Genre: Science and Technology &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp; Time of Submission: 5:05PM <br>
+            Book Seller: John Doe &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Account Creation Date: 12/01/2021 <br>
+            Department: Science &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Student ID: 92XXX13 <br>
+            Email: jdoe@mail.sfsu.edu &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; Total Submissions: 3 <br> 
+            Contact: (224)-555-5555 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Account Flags: 0 <br>
+            Description: Book is in pretty good shape, <br> I took some notes in the margins but for the <br>
+            most part its in really good condition&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<button id="deny_btn" onclick="removeTwo()">Deny</button>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;<button id="approve_btn" onclick="removeTwo()">Approve</button></p>
             </div>
         </div>
         </div>
