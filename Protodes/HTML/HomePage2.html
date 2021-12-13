@@ -18,6 +18,9 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../CSS/homepageCSS.css">
+    <link rel="stylesheet" type="text/css" href="../HTML/Books Page/BooksPage.css">
+    
+    <link rel="stylesheet" type="text/css" href="../HTML/Events page/EventsPage.css"><link rel="stylesheet" type="text/css" href="../HTML/Housing Page/HousingPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
@@ -117,21 +120,19 @@
         <div>
             <div class="jumbotron jumbotron-fluid" style="margin-top:50px;height: calc(0.2 * 170vw);" id="grad">
                 <div style="padding-top: 20px;">
-                    <div style="padding-top: 20px; padding-right: 20px;left:5%; position: absolute;">
+                    <div style="padding-top: 20px; padding-right: 20px;right: 0; position: absolute;">
 
-                        <h1 class="display-4 herotxt1" style="color: black; ">GATOR COMPANION</h1>
-                        <p class="herotxt" >San Francisco</br>
-                            State University</p>
-                        <p class="lead herotxt2" style="color:black;  padding-right: 20px;">
-                            a hub for SFSU students looking to join events,</br> find roomates, and get your textbooks</br> for your classes.
+                        <h1 class="display-4" style="color: #FCE308; font-weight: bold;font-family: 'Alfa Slab One', cursive;">GATOR COMPANION</h1>
+                        <p class="lead" style="color: white; right:0; position: absolute; padding-right: 20px;">SF State
+                            hub for housing, books, and events
                         </p>
                     </br>
-                        <p class=" herotxt2"style="color: black;padding-right: 20px;">HCI Class SFSU CS department Fall 2021 Team 6</p>
+                        <p style="color: white; right:0; position: absolute; padding-right: 20px;">HCI Class SFSU CS department Fall 2021 Team 6</p>
                         </br>
-                       
-                        <div style="padding-right: 20px;"><button
+                        </br>
+                        <div style="padding-right: 20px;right:0; position: absolute;"><button
                                 style=" background-color: #FCE308; border: 2px solid #34328F; color: #34328F;border-radius: 5px;">
-                                <p style="font-weight: bold; padding: 0 ;margin: 5px;">Learn More</p>
+                                <p style="font-weight: bold; padding: 0 ;margin: 5px;">Get Started !</p>
                             </button></div>
                     </div>
 
@@ -141,7 +142,7 @@
                         <div class="col-md-12">
 
                         </div>
-                        <div class="row row justify-content-around" style="margin-top: 28%;">
+                        <div class="row row justify-content-around" style="margin-top: 25%;">
 
                             <div id="housingbutton" class="col-md-4" >
                                 <div class="butbox">
@@ -214,104 +215,171 @@
 
             <!--end of the div for the big image on the homepage-->
 
-            <div>
-                <div class="row" id="row3">
-                    <div class="col-md-12 ">
-                        <p class="htitle" style="font-family: 'Alfa Slab One', cursive;font-size: calc(0.2 * 10vw);">Lastest Events</p>
-                    </div>
-                    <div class="col " style="display: flex; align-items: center;width: 100%;">
-                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('https://miro.medium.com/max/1400/1*ydhn1QPAKsrbt6UWfn3YnA.jpeg');
-                        background-size: cover;">
-                            <div class="card-body text-white">
-                                <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
-                            </div>
-                        </div>
+            <div class="row" style="margin:20px;height:202px">
 
-                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkS_l2dbA8P5Hv5BCwfoRQEsopPMuUQhFkCA&usqp=CAU');
-                        background-size: cover;">
-                            <div class="card-body text-white">
-                                <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
+                <a class="col-lg-3 hov2" style="text-decoration: none" href="ViewEvent.html">
+                    <div>
+                    
+                        <div class="card1 row" style="border-radius:25px;">
+                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class="card-date">12/21/2021</p>
+                            </div>
+                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class="card-title">Gator Fest</p>
                             </div>
                         </div>
-
-                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('https://images.squarespace-cdn.com/content/v1/55c37beae4b0336075603f86/1443039469134-E9SLQBQ2OW1Y69KPKFDO/image-asset.jpeg?format=2500w');
-                        background-size: cover;">
-                            <div class="card-body text-white">
-                                <h4 class="card-title" style="bottom: 0; position: absolute;">Event Title</h4>
+                        
+                    </div>
+                </a>
+                
+                <a class="col-lg-5 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewEvent.html">
+                    <div>
+                        
+                        <div class="card2 row">
+                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class="card-date">12/21/2021</p>
+                            </div>
+                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class="card-title">Awards Dinner</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
+                <a class="col-lg-3 hov2" style="text-decoration: none" href="ViewEvent.html">
+                    <div>
+                        
+
+                        <div class="card3 row">
+                            <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class="card-date">12/21/2021</p>
+                            </div>
+                            <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                <p class="card-title">Presentation</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
                 <!--end of the div for the events row on the homepage-->
 
-                <div class="row" id="row3" style="padding-right: 0;">
-                    <div class="col-md-12">
-                        <p class="htitle" style="font-family: 'Alfa Slab One', cursive;font-size: calc(0.2 * 10vw);">Most Viewed Housing</p>
-                    </div>
-                    <div class="col " style="display: flex; align-items: center;width: 100%;">
-                        <div class="col bg-image cardh shadow-1-strong" 
-                        style="background-image: url('../Images/CSC642photo/christian-koch-D_4R9CcYZOk-unsplash.jpg');
-                        background-size: cover; ">
-                            <div class="card-body text-white">
-                                <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>
-                            </div>
-                        </div>
+                <div class="row" style="margin:20px;height:202px; background-color: #34328F;">
 
-                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('../Images/CSC642photo/dillon-kydd-2keCPb73aQY-unsplash.jpg');
-                        background-size: cover;">
-                            <div class="card-body text-white">
-                                <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>
+                    <a class="col-lg-3 hov2" style="text-decoration: none" href="ViewHousing.html">
+                        <div>
+                        
+                            <div class="card1 row" style="border-radius:25px;">
+                                <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class="card-date">$2000/mo</p>
+                                </div>
+                                <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class="card-title">House 1</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </a>
+                    
+                    <a class="col-lg-5 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewHousing.html">
+                        <div>
+                            
+                            <div class="card2 row">
+                                <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class="card-date">$3000/mo</p>
+                                </div>
+                                <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class="card-title">House 2</p>
+                                </div>
                             </div>
                         </div>
+                    </a>
 
-                        <div class="col bg-image cardh shadow-1-strong" style="background-image: url('../Images/CSC642photo/scott-webb-1ddol8rgUH8-unsplash1.jpg');
-                        background-size: cover; ">
-                            <div class="card-body text-white">
-                                <h4 class="card-title" style="bottom: 0; position: absolute;">Housing Address</h4>
+                    <a class="col-lg-3 hov2" style="text-decoration: none" href="ViewHousing.html">
+                        <div>
+                            
+
+                            <div class="card3 row">
+                                <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class="card-date">$5000/mo</p>
+                                </div>
+                                <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                    <p class="card-title">House 3</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+
+
                 </div>
                 <!--end of the div for the housing row on the homepage-->
+                <div class="row" style="margin:20px;height:202px; background-color: #34328F;">
 
-                <div class="row" id="row3">
-                    <div class="col-md-12">
-                        <p class="htitle" style="font-family: 'Alfa Slab One', cursive;font-size: calc(0.2 * 10vw);">Most Viewed Books</p>
-                    </div>
-                    <div class="col " style="display: flex; align-items: center;width: 100%;">
-                        <div class="col bg-image cardb shadow-1-strong" >
-                            <img src='https://www.mediacominc.com/wp/wp-content/uploads/2014/03/business-events.jpg' >
-                            <div style="float:right;">
-                                <h2>Book Title</h2>
-                                <p style="margin: 0;">Author: XXXXX</p>
-                                <p style="margin: 0;">Publisher: XXXX</p>
-                                <p style="margin: 0;">Description: XXXXXX </br>XXXXX XXXXXX</p>
-                                <h3>$$$$$</h3>
+                    <a class="col-lg-4 hov2" style="text-decoration: none" href="ViewBook.html">
+                        <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                            <div class="col-lg-6 book1">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                    Book 1
+                                </div>
+                                <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                    <strong>Author: </strong> xx
+                                </div>
+                                <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                    <strong>Category: </strong> Engineering
+                                </div>
+                                <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                    <strong>Price:</strong> $15
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col bg-image cardb shadow-1-strong" >
-                            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkS_l2dbA8P5Hv5BCwfoRQEsopPMuUQhFkCA&usqp=CAU'  >
-                            <div style="float:right;">
-                                <h2>Book Title</h2>
-                                <p style="margin: 0;">Author: XXXXX</p>
-                                <p style="margin: 0;">Publisher: XXXX</p>
-                                <p style="margin: 0;">Description: XXXXXX </br>XXXXX XXXXXX</p>
-                                <h3>$$$$$</h3>
+                    </a>
+                    
+                    <a class="col-lg-4 hov2" style="text-decoration: none" href="ViewBook.html">
+                        <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                            <div class="col-lg-6 book2">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                    Book 2
+                                </div>
+                                <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                    <strong>Author: </strong> xx
+                                </div>
+                                <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                    <strong>Category: </strong> Biology
+                                </div>
+                                <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                    <strong>Price:</strong> $25
+                                </div>
                             </div>
                         </div>
+                    </a>
 
-                        <div class="col bg-image cardb shadow-1-strong" >
-                            <img src= 'https://i.pinimg.com/236x/c0/c0/95/c0c09510383f8805a2fd304370af0005--wattpad-covers-cover-design.jpg' >
-                            <div style="float:right; ">
-                                <h2>Book Title</h2>
-                                <p style="margin: 0;">Author: XXXXX</p>
-                                <p style="margin: 0;">Publisher: XXXX</p>
-                                <p style="margin: 0;">Description: XXXXXX </br>XXXXX XXXXXX</p>
-                                <h3>$$$$$</h3>
+                    <a class="col-lg-4 hov2" style="text-decoration: none" href="ViewBook.html">
+                        <div class="row justify-content-between" style="margin:1px;background-color: lightgrey;border-radius:25px">
+                            <div class="col-lg-6 book3">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="row" style="color:black;font-size:30px;font-weight:bold;margin-top:10px">
+                                    Book 3
+                                </div>
+                                <div class="row" style="color:black;font-size:15px;margin-top:25px">
+                                    <strong>Author: </strong> xx
+                                </div>
+                                <div class="row" style="color:black;font-size:15px;margin-top:5px">
+                                    <strong>Category: </strong> Geography
+                                </div>
+                                <div class="row" style="color:black;font-size:20px;margin-top:10px">
+                                    <strong>Price:</strong> $30
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
+
+
                 </div>
                 <!--end of the div for the books row on the homepage-->
 

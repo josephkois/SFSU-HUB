@@ -1,0 +1,60 @@
+.navbar{
+    padding: 0;
+    height: 50px;
+    color:black;
+}
+
+.navbar ul {
+    margin: 0;
+}
+
+.nav-link{
+    color: #FCE308;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.row .col-md-4 .h2 {
+    color: #000; 
+    font-size: calc(.1 * 30vw);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+.row .col-md-4 a {
+    text-decoration: none;
+}
+
+.butbox {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+    background-color: #a5a1a7;
+    background-size: cover;
+    padding: 3px; 
+    border-radius: 12px;
+    max-height: 150px;
+    display: block;
+}
+
+a {
+    text-decoration: "none";
+    color: #000;
+}
+
+a:hover{
+    color:purple;
+}
+
+#row3{
+   background-color: #34328F;
+   margin-bottom: 3%;
+   
+   
+    padding: 1%;
+    border-radius: 15px;
+    border: 5px solid gray;
+    height:fit-content;
+}
