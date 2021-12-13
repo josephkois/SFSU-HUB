@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Login</title>
+    <title>Register</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,26 +43,27 @@
             <input type="email" class="form-control" 
             style="border: 2px solid black; border-radius: 10px;" id="email"
             placeholder="SFSU email">
+            <small id="emailHelpBlock" class="form-text text-muted">ex: jdoe@mail.sfsu.edu</small>
           </div>
           <div class="form-group">
-
-            
 
             <input type="email" class="form-control" 
             style="border: 2px solid black; border-radius: 10px;" id="email"
               placeholder="Username">
-
+              <small id="usernameHelpBlock" class="form-text text-muted">your username must start with a letter, and must not contain special characters</small>
 
           </div>
           <div class="form-group">
 
             <input type="password" class="form-control" style="border: 2px solid black;border-radius: 10px;" id="pwd"
               placeholder="Password">
-         
-          </div>
- 
+              <small id="passwordHelpBlock" class="form-text text-muted">Your password must be 8-20 characters long, and must not contain spaces</small>
 
-        
+              <input type="password" class="form-control" style="border: 2px solid black; margin-top: 10px; border-radius: 10px;" id="pwdconfirm"
+              placeholder="Confirm Password">
+              <small id="passwordHelpBlock" class="form-text text-muted">Please confirm your password</small>
+
+          </div>
 
           <div style="text-align: center;">
             <button type="button" class="btn-sm" id="loginbut" style="height:40px; padding:0;">
@@ -71,10 +72,6 @@
               </p>
             </button>
           </div>
-
-
-
-
 
         </form>
       </div>
