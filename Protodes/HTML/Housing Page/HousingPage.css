@@ -123,6 +123,22 @@ div.card1{
    
 }
 
+div.interior1{
+    background-image: url('https://media.architecturaldigest.com/photos/571e97ce818277135ff91620/master/w_2626,h_1821,c_limit/modernist-decor-inspiration-07.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+
+div.interior2{
+    background-image: url('https://www.decorilla.com/online-decorating/wp-content/uploads/2020/07/Coastal-house-interior-design.jpg');
+    background-size: cover;
+    border-radius: 25px;
+    height:200px;
+   
+}
+
 div.card2{
     background-image: url('https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F1026205392%2FBeautiful-luxury-home-exterior-at-twilight%2F960x0.jpg%3Ffit%3Dscale');
     background-size: cover;
