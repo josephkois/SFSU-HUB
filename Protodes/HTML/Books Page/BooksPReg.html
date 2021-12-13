@@ -1,4 +1,4 @@
-<!doctype html>
+!doctype html>
 <html lang="en">
   <head>
     <title>Books Page</title>
@@ -23,8 +23,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+    <div class="cotainer" id="loginp" style="display: table;position: absolute;top: 0;left: 0;height: 100%;width: 100%;z-index: 1000;">
+        <div class="row justify-content-center" style="display: table-cell;vertical-align: middle;"><div class="col-md-4" style="border: 5px solid black; border-radius: 10px; box-shadow: 5px; margin-left: auto;margin-right: auto; background-color: white;border: 5px solid black; 
+            border-radius: 10px; 
+            padding: 20px 30px ;
+            " id="loginb"><a href="BooksPage.html"><span class="material-icons"style="top:0; right:0; position: absolute;">cancel</span></a><div class="row"><div class="col align-self-center" style="text-align: center;"><img class="img-thumbnail" style="border: none; " src="../../Images/gator_web 1.png"></div></div><form action="/action_page.php"><p style="font-weight: bold; font-size: 20px;">Register</p><div class="form-group">
+            <input type="email" class="form-control" style="border: 2px solid black; border-radius: 10px;" id="email"placeholder="SFSU email"></div><div class="form-group"><input type="email" class="form-control" style="border: 2px solid black; border-radius: 10px;" id="email"placeholder="Username"></div><div class="form-group"><input type="password" class="form-control" style="border: 2px solid black;border-radius: 10px;" id="pwd"placeholder="Password"></div>
+            <div style="text-align: center;"><a href="CreateBook.html">
+            <button type="button" class="btn-sm" id="loginbut" style=" background-color: #34328F;
+            color: white;border: 2px solid #34328F;border-radius: 50px;height:40px; padding:0;" >
+            <p style="padding:0; margin:0; font-size: 20px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button>
+            </a></div></form></div></div>
+    </div>
+
+
     <!-- Navbar (not perfect)-->
-    <div id="ndblur">
+    <div id="ndblur" style="top:0; left:0; width:100%; height: 100%;background-color: white;content: none;pointer-events: none;opacity: .5;">
         <nav class="fixed-top navbar-expand-lg " style="margin-right:15px">
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
                 data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
@@ -106,7 +122,7 @@
             </a>
         </div>
        
-        <a style="text-decoration: none" href="BooksPLogin.html">
+        <a style="text-decoration: none" onclick="login('Books')">
             <div class="row col-lg-auto searchEventButton rounded-pill" style="margin-left:100px">
                 <img  src="https://icon-library.com/images/white-plus-icon/white-plus-icon-3.jpg" alt="Eye icon" style="width:20px;height:20px;margin-top: 10px;">
                 <p style="color:aliceblue;margin-left: 20px;margin-top:5px;font-size:20px;font-family:Montserrat">Sell a book</p>

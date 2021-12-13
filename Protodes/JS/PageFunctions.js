@@ -36,6 +36,19 @@ function viewAllHousing(){
 
 //to blur the page and poup the login
 function login(pagename){
+    let whereto ;
+    if(pagename === 'Housing'){
+        whereto = '../HTML/Housing Page/CreateHousing.html';
+    }else if(pagename === 'Events'){
+        whereto = "../HTML/Events page/CreateEvent.html";
+    }else if(pagename === 'Books'){
+        whereto = '../HTML/HomePage.html';
+    }else if(pagename === 'home'){
+        whereto = "../HTML/HomePage.html";
+    }
+    else{
+        console.log('Pagename error');
+    }
     let bg = document.getElementById('ndblur');
     bg.style.top = 0;
     bg.style.left = 0;
@@ -56,20 +69,26 @@ function login(pagename){
     " id="loginb"><a onclick="cancelled()">
     <span class="material-icons"style="top:0; right:0; position: absolute;">cancel
     </span><div class="row"></a><div class="col align-self-center" style="text-align: center;">
-    <img class="img-thumbnail" style="border: none; " src="../Images/gator_web 1.png"></div>
+    <img class="img-thumbnail" style="border: none; " src="../../Images/gator_web 1.png"></div>
     </div><form action="/action_page.php"><p style="font-weight: bold; font-size: 20px;">Log in</p>
     <div class="form-group">
     <input type="email" class="form-control" style="border: 2px solid black; border-radius: 10px;" id="email"placeholder="Username"><div style="text-align: right;"> 
     <a href="#" style="align-self: right; font-size: 15px;">ForgotUsername?</a></div></div>
     <div class="form-group"><input type="password" class="form-control" style="border: 2px solid black;border-radius: 10px;" id="pwd"placeholder="Password"><div style="text-align: right;"> <a href="#" style="align-self: right;font-size: 15px;">Forgot Password?</a>
-    </div></div><div style="text-align: center;"><button type="button" onclick="logged('${npn}')" class="btn-sm" id="loginbut" style="background-color: #34328F;
+    </div>
+    </div>
+    <div style="text-align: center;"><a href="${whereto}">
+    <button type="button" class="btn-sm" id="loginbut" style="background-color: #34328F;
     color: white;
     border: 2px solid #34328F;
-    border-radius: 50px;height:40px; padding: 0;"><p style="padding:0; margin:0;  font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button></div> <div class="row justify-content-around">
+    border-radius: 50px;height:40px; padding: 0;"><p style="padding:0; margin:0;  font-size: 20px;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Log in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    </button></a>
+    </div> <div class="row justify-content-around">
     <div class="col-md-4"><div style="border:20x solid black; text-align: right;">
     <p style="font-weight:900;">&nbsp;&nbsp;_______________&nbsp;&nbsp;</p></div></div><div class="col-md-2" style="text-align: center; margin-top: 10px;"><p style="font-weight: bold;">OR</p></div><div class="col-md-4">
     <div style="border:20x solid black ; text-align: left;">
-    <p style="font-weight:900;">_______________&nbsp;&nbsp;</p></div></div></div><a style="text-decoration: none" onclick="need2Reg()">
+    <p style="font-weight:900;">_______________&nbsp;&nbsp;</p></div></div></div><a style="text-decoration: none" onclick="need2Reg('${npn}')">
     <div style="text-align: center;"><button type="button" class="btn-sm" id="regbut" style="background-color: white;
     color:#34328F;
     border:2px solid #34328F;
@@ -80,11 +99,12 @@ console.log('inside the login function');}
 function logged(pagename){
     console.log('insdie the logged functiom');
     if(pagename === 'Housing'){
-        window.location = '../HTML/HousingForm.html';
+        window.location = '../HTML/Housing Page/CreateHousing.html';
     }else if(pagename === 'Events'){
-        window.location = "../Pablo's Work/CreateEvent.html";
+        window.location = "../HTML/Events page/CreateEvent.html";
     }else if(pagename === 'Books'){
-        window.location = '../HTML/BooksForm.html';
+        //window.location = '';
+        window.location.assign('../HTML/Books Page/CreateBook.html');
     }else if(pagename === 'home'){
         window.location = "../HTML/HomePage.html";
     }
@@ -141,17 +161,17 @@ function confirmation(pagename){
 }
 
 //replacing the login with the register whe user needs to register
-function need2Reg(){
+function need2Reg(pagename){
     let lg = document.getElementById('loginp');
     lg.innerHTML = `<div class="row justify-content-center" style="display: table-cell;vertical-align: middle;"><div class="col-md-4" style="border: 5px solid black; border-radius: 10px; box-shadow: 5px; margin-left: auto;margin-right: auto; background-color: white;border: 5px solid black; 
     border-radius: 10px; 
     padding: 20px 30px ;
-    " id="loginb"><a onclick="cancelled()"><span class="material-icons"style="top:0; right:0; position: absolute;">cancel</span></a><div class="row"><div class="col align-self-center" style="text-align: center;"><img class="img-thumbnail" style="border: none; " src="../Images/gator_web 1.png"></div></div><form action="/action_page.php"><p style="font-weight: bold; font-size: 20px;">Register</p><div class="form-group">
+    " id="loginb"><a onclick="cancelled()"><span class="material-icons"style="top:0; right:0; position: absolute;">cancel</span></a><div class="row"><div class="col align-self-center" style="text-align: center;"><img class="img-thumbnail" style="border: none; " src="../../Images/gator_web 1.png"></div></div><form action="/action_page.php"><p style="font-weight: bold; font-size: 20px;">Register</p><div class="form-group">
     <input type="email" class="form-control" style="border: 2px solid black; border-radius: 10px;" id="email"placeholder="SFSU email"></div><div class="form-group"><input type="email" class="form-control" style="border: 2px solid black; border-radius: 10px;" id="email"placeholder="Username"></div><div class="form-group"><input type="password" class="form-control" style="border: 2px solid black;border-radius: 10px;" id="pwd"placeholder="Password"></div>
     <div style="text-align: center;"><button type="button" class="btn-sm" id="loginbut" style=" background-color: #34328F;
     color: white;
     border: 2px solid #34328F;
-    border-radius: 50px;height:40px; padding:0;"><p style="padding:0; margin:0; font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button></div></form></div></div>`
+    border-radius: 50px;height:40px; padding:0;" onclick="logged('${pagename}')"><p style="padding:0; margin:0; font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button></div></form></div></div>`
 }
 
 //for if user clicks the X for the login or register popup form

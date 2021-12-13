@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Housing Page</title>
+    <title>Events Page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-    <link rel="stylesheet" href="HousingPage.css">
+    <link rel="stylesheet" href="EventsPage.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   </head>
+
+
+
 
   <body id="body">
      
@@ -23,8 +26,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+    <div class="cotainer" id="loginp" style="display: table;position: absolute;top: 0;left: 0;height: 100%;width: 100%;z-index: 1000;">
+        <div class="row justify-content-center" style="display: table-cell;vertical-align: middle;"><div class="col-md-4" style="border: 5px solid black; border-radius: 10px; box-shadow: 5px; margin-left: auto;margin-right: auto; background-color: white;border: 5px solid black; 
+            border-radius: 10px; 
+            padding: 20px 30px ;
+            " id="loginb"><a href="EventsPage.html"><span class="material-icons"style="top:0; right:0; position: absolute;">cancel</span></a><div class="row"><div class="col align-self-center" style="text-align: center;"><img class="img-thumbnail" style="border: none; " src="../../Images/gator_web 1.png"></div></div><form action="/action_page.php"><p style="font-weight: bold; font-size: 20px;">Register</p><div class="form-group">
+            <input type="email" class="form-control" style="border: 2px solid black; border-radius: 10px;" id="email"placeholder="SFSU email"></div><div class="form-group"><input type="email" class="form-control" style="border: 2px solid black; border-radius: 10px;" id="email"placeholder="Username"></div><div class="form-group"><input type="password" class="form-control" style="border: 2px solid black;border-radius: 10px;" id="pwd"placeholder="Password"></div>
+            <div style="text-align: center;"><a href="CreateEvent.html">
+            <button type="button" class="btn-sm" id="loginbut" style=" background-color: #34328F;
+            color: white;border: 2px solid #34328F;border-radius: 50px;height:40px; padding:0;" >
+            <p style="padding:0; margin:0; font-size: 20px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></button>
+            </a></div></form></div></div>
+    </div>
+
+
     <!-- Navbar (not perfect)-->
-    <div id="ndblur">
+    <div id="ndblur" style="top:0; left:0; width:100%; height: 100%;background-color: white;content: none;pointer-events: none;opacity: .5;">
     <div class="container">
         <nav class="fixed-top navbar-expand-lg " style="margin-right:15px">
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
@@ -41,13 +60,13 @@
                             <a class="nav-link" href="../HomePage.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="../Events page/EventsPage.html" >Events <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../Events page/EventsPage.html"  style="font-weight: bold;">Events <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="../Books Page/BooksPage.html" >Books<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="HousingPage.html"  style="font-weight: bold;">Housing<span
+                            <a class="nav-link" href="../Housing Page/HousingPage.html" >Housing<span
                                     class="sr-only">(current)</span></a>
                         </li>
     
@@ -90,16 +109,16 @@
     </div>
     
     <div class="container separate">
-        <h1 style="font-family: Montserrat;">Find out available housing options for all SF State students!</h1>
+        <h1 style="font-family: Montserrat;">Find out what other students are up to by viewing upcoming and popular events at San Francisco State!</h1>
     </div>
     
     <div class="row my-row" style="height: 50px; margin-left:2px">
         <form class="form-inline col-lg-6 searchbar">
-            <input class="form-control mr-sm-2 col-md-12" id="search" type="Q search" placeholder="Search house name..."
+            <input class="form-control mr-sm-2 col-md-12" id="search" type="Q search" placeholder="Search event title..."
                 aria-label="Search">
         </form>
         <div>
-            <a style="text-decoration: none" href="Housingpage-ViewAll.html">
+            <a style="text-decoration: none" href="Eventspage-ViewAll.html">
                 <div class=" row col-lg-auto searchEventButton rounded-pill" style="margin-left: 100px;">
                     <img  src="https://www.nicepng.com/png/full/303-3037570_eyequeue-white-eye-icon-transparent.png" alt="Eye icon" style="width:35px;height:20px;margin-top: 10px;">
                     <p style="color:aliceblue;margin-left: 20px;margin-top:5px;font-size:20px;font-family:Montserrat">View all</p>
@@ -107,10 +126,10 @@
             </a>
         </div>
        
-        <a style="text-decoration: none" href="HousingPLogin.html">
+        <a style="text-decoration: none" onclick="login('Events')">
             <div class="row col-lg-auto searchEventButton rounded-pill" style="margin-left:100px">
                 <img  src="https://icon-library.com/images/white-plus-icon/white-plus-icon-3.jpg" alt="Eye icon" style="width:20px;height:20px;margin-top: 10px;">
-                <p style="color:aliceblue;margin-left: 20px;margin-top:5px;font-size:20px;font-family:Montserrat">Add listing</p>
+                <p style="color:aliceblue;margin-left: 20px;margin-top:5px;font-size:20px;font-family:Montserrat">Create Event</p>
             </div>
         </a>
     </div>
@@ -119,10 +138,8 @@
             <strong><p style="font-size: 25px;font-family: Montserrat;">Filters</p></strong>
             <div class="row">
                 <div class="col-lg-11">
-                    <hr  style="width:300px;text-align: left;" size="30" noshade> 
-                        
-                        <p style="font-size: 25px;font-family: Montserrat;">Leasing Dates</p>
-                        <p style="font-size: 15px;font-family: Montserrat;margin-top:15px">From</p>
+                        <hr  style="width:300px;text-align: left;" size="30" noshade> 
+                        <p style="font-size: 15px;font-family: Montserrat;">Date</p>
                         <div class= "row">
                             <div class="col-lg-4">
                                 <select class="form-control form-control-sm">
@@ -182,84 +199,12 @@
                                 <select class="form-control form-control-sm">
                                     <option>Year</option>
                                     <option>2021</option>
-                                    <option>2022</option>
-                                    <option>2023</option>
-                                    <option>2024</option>
-                                    <option>2025</option>
-                                    <option>2026</option>
-                                    <option>2027</option>
-                                    
-                                
-                                </select>
-                            </div>
-                        </div>
-                        <p style="font-size: 15px;font-family: Montserrat;margin-top:15px">Until</p>
-                        <div class= "row">
-                            <div class="col-lg-4">
-                                <select class="form-control form-control-sm">
-                                <option>Day</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                                <option>13</option>
-                                <option>14</option>
-                                <option>15</option>
-                                <option>16</option>
-                                <option>17</option>
-                                <option>18</option>
-                                <option>19</option>
-                                <option>20</option>
-                                <option>21</option>
-                                <option>22</option>
-                                <option>23</option>
-                                <option>24</option>
-                                <option>25</option>
-                                <option>26</option>
-                                <option>27</option>
-                                <option>28</option>
-                                <option>29</option>
-                                <option>30</option>
-                                <option>31</option>
-                            </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <select class="form-control form-control-sm">
-                                    <option>Month</option>
-                                    <option>January</option>
-                                    <option>February</option>
-                                    <option>March</option>
-                                    <option>April</option>
-                                    <option>May</option>
-                                    <option>June</option>
-                                    <option>July</option>
-                                    <option>August</option>
-                                    <option>September</option>
-                                    <option>October</option>
-                                    <option>November</option>
-                                    <option>December</option>
-                                    
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <select class="form-control form-control-sm">
-                               
-                                    <option>Year</option>
-                                    <option>2021</option>
-                                    <option>2022</option>
-                                    <option>2023</option>
-                                    <option>2024</option>
-                                    <option>2025</option>
-                                    <option>2026</option>
-                                    <option>2027</option>
+                                    <option>2020</option>
+                                    <option>2019</option>
+                                    <option>2018</option>
+                                    <option>2017</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
                                     
                                 
                                 </select>
@@ -289,68 +234,43 @@
                             <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Shared
+                                  Sports
                                 </label>
                             </div>
                             <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Single room
+                                  Concert
                                 </label>
                             </div>
                             <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Pet friendly
+                                  Student Organized
                                 </label>
                             </div>
                             <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Party friendly
+                                  Party
                                 </label>
                             </div>
                             <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Female only
+                                  Food
                                 </label>
                             </div>
                             <div class="form-check col-lg-9" style="margin-top:10px; margin-left:5px">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                                 <label class="form-check-label" for="defaultCheck1">
-                                  Male only
+                                  Charity
                                 </label>
                             </div>
                             
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-11">
-                    <hr  style="width:300px;text-align: left;" size="30" noshade> 
-                        <p style="font-size: 15px;font-family: Montserrat;margin-top:15px">Number of People</p>
-                        <div class= "row">
-                            <div class="col-lg-6">
-                                <select class="form-control form-control-sm">
-                                <option>People</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                
-                                </select>
-                            </div>
-                           
-                        </div>
-                </div>
-                
                 
             </div>
             
@@ -360,49 +280,49 @@
 
         <div class="col-lg-8" id="content" style="margin-left:20px;margin-bottom:100px">
             <div >
-                <p style="font-family:Montserrat;font-size:25px">Recent listings (showing 6 of 6)</p>
+                <p style="font-family:Montserrat;font-size:25px">Upcoming Events</p>
                 <div class="outlined">
                     <div class="row" style="margin:20px;height:202px">
 
-                        <a  class="col-lg-3 hov2" style="text-decoration: none" href="ViewHousing.html">
+                        <a  class="col-lg-3 hov2" style="text-decoration: none" href="ViewEvent.html">
                             <div>
                             
                                 <div class="card1 row" style="border-radius:25px;">
                                     <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p class="card-date">$2000/mo</p>
+                                        <p class="card-date">12/21/2021</p>
                                     </div>
                                     <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p  class="card-title">House 1</p>
+                                        <p  class="card-title">Gator Fest</p>
                                     </div>
                                 </div>
                                 
                             </div>
                         </a>
                         
-                        <a  class="col-lg-5 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewHousing.html">
+                        <a  class="col-lg-5 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewEvent.html">
                             <div>
                                 
                                 <div class="card2 row" >
                                     <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p class=card-date>$3000/mo</p>
+                                        <p class=card-date>12/21/2021</p>
                                     </div>
                                     <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p  class="card-title">House 2</p>
+                                        <p  class="card-title">Awards Dinner</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
 
-                        <a  class="col-lg-3 hov2" style="text-decoration: none" href="ViewHousing.html">
+                        <a  class="col-lg-3 hov2" style="text-decoration: none" href="ViewEvent.html">
                             <div>
                                 
 
                                 <div class="card3 row" >
                                     <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p class=card-date>$5000/mo</p>
+                                        <p class=card-date>12/21/2021</p>
                                     </div>
                                     <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p  class="card-title">House 3</p>
+                                        <p  class="card-title">Presentation</p>
                                     </div>
                                 </div>
                             </div>
@@ -411,43 +331,43 @@
 
                     </div>
                     <div class="row" style="margin:20px;height:202px">
-                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewHousing.html">
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html">
                             <div>
                                 
                                 <div class="card4 row">
                                     <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p class=card-date>$6000/mo</p>
+                                        <p class=card-date>12/21/2021</p>
                                     </div>
                                     <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p  class="card-title">House 4</p>
+                                        <p  class="card-title">Concert</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
 
-                        <a  class="col-lg-3 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewHousing.html">
+                        <a  class="col-lg-3 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewEvent.html">
                             <div>
                                 
                                 <div class="card5 row">
                                     <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p class=card-date>$7000/mo</p>
+                                        <p class=card-date>12/21/2021</p>
                                     </div>
                                     <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p  class="card-title">House 5</p>
+                                        <p  class="card-title">Festival</p>
                                     </div>
                                 </div>
                             </div>
                         </a>
 
-                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewHousing.html">
+                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html">
                             <div>
                                 
                                 <div class="card6 row">
                                     <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p class=card-date>$8000/mo</p>
+                                        <p class=card-date>12/21/2021</p>
                                     </div>
                                     <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p  class="card-title">House 6</p>
+                                        <p  class="card-title">Convention</p>
                                     </div>
                                 </div>
                             </div>
@@ -464,108 +384,108 @@
             </div>
             
             <div style="margin-top:25px">
-                <p style="font-family:Montserrat;font-size:25px">Housing closest to campus (showing 6 of 6)</p>
-                <div class="outlined">
-                    <div class="row" style="margin:20px;height:202px">
-
-                        <a  class="col-lg-3 hov2" style="text-decoration: none" href="ViewHousing.html">
-                            <div>
+                    <p style="font-family:Montserrat;font-size:25px">Upcoming Events</p>
+                    <div class="outlined">
+                        <div class="row" style="margin:20px;height:202px">
+    
+                            <a  class="col-lg-3 hov2" style="text-decoration: none" href="ViewEvent.html">
+                                <div>
+                                
+                                    <div class="card1 row" style="border-radius:25px;">
+                                        <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                            <p class="card-date">12/21/2021</p>
+                                        </div>
+                                        <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                            <p  class="card-title">Gator Fest</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </a>
                             
-                                <div class="card1 row" style="border-radius:25px;">
-                                    <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p class="card-date">$2000/mo</p>
-                                    </div>
-                                    <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p  class="card-title">House 1</p>
+                            <a  class="col-lg-5 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewEvent.html">
+                                <div>
+                                    
+                                    <div class="card2 row" >
+                                        <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                            <p class=card-date>12/21/2021</p>
+                                        </div>
+                                        <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                            <p  class="card-title">Awards Dinner</p>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                            </div>
-                        </a>
+                            </a>
+    
+                            <a  class="col-lg-3 hov2" style="text-decoration: none" href="ViewEvent.html">
+                                <div>
+                                    
+    
+                                    <div class="card3 row" >
+                                        <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                            <p class=card-date>12/21/2021</p>
+                                        </div>
+                                        <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
+                                            <p  class="card-title">Presentation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+    
+    
+                        </div>
+                        <div class="row" style="margin:20px;height:202px">
+                            <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html">
+                                <div>
+                                    
+                                    <div class="card4 row">
+                                        <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                            <p class=card-date>12/21/2021</p>
+                                        </div>
+                                        <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                            <p  class="card-title">Concert</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a  class="col-lg-3 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewEvent.html">
+                                <div>
+                                    
+                                    <div class="card5 row">
+                                        <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                            <p class=card-date>12/21/2021</p>
+                                        </div>
+                                        <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                            <p  class="card-title">Festival</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewEvent.html">
+                                <div>
+                                    
+                                    <div class="card6 row">
+                                        <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                            <p class=card-date>12/21/2021</p>
+                                        </div>
+                                        <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
+                                            <p  class="card-title">Convention</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+    
+    
+                        </div>
                         
-                        <a  class="col-lg-5 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewHousing.html">
-                            <div>
-                                
-                                <div class="card2 row" >
-                                    <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p class=card-date>$3000/mo</p>
-                                    </div>
-                                    <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p  class="card-title">House 2</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a  class="col-lg-3 hov2" style="text-decoration: none" href="ViewHousing.html">
-                            <div>
-                                
-
-                                <div class="card3 row" >
-                                    <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p class=card-date>$5000/mo</p>
-                                    </div>
-                                    <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px;">
-                                        <p  class="card-title">House 3</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-
+    
+    
                     </div>
-                    <div class="row" style="margin:20px;height:202px">
-                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewHousing.html">
-                            <div>
-                                
-                                <div class="card4 row">
-                                    <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p class=card-date>$6000/mo</p>
-                                    </div>
-                                    <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p  class="card-title">House 4</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a  class="col-lg-3 hov2" style="text-decoration: none;margin-left:30px;margin-right:30px" href="ViewHousing.html">
-                            <div>
-                                
-                                <div class="card5 row">
-                                    <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p class=card-date>$7000/mo</p>
-                                    </div>
-                                    <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p  class="card-title">House 5</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a  class="col-lg-4 hov2" style="text-decoration: none" href="ViewHousing.html">
-                            <div>
-                                
-                                <div class="card6 row">
-                                    <div class="top-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p class=card-date>$8000/mo</p>
-                                    </div>
-                                    <div class="bottom-shadow col-lg-12" style="border-radius:25px;position:absolute;height:200px">
-                                        <p  class="card-title">House 6</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-
-
-                    </div>
-                    
-
-
-                </div>
-
-
-            </div>
+    
+    
+             </div>
 
 
 
