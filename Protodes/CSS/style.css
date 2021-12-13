@@ -51,9 +51,10 @@
 
 
 
-#nav-left-side{
+#nav-left-side {
     align-content: flex-end;
 }
+
 .card{
     
     background-size: cover;
@@ -62,7 +63,8 @@
     box-shadow: inset 0px 30px 20px  rgba(0,0,0,0.8),
                 inset 0px -30px 20px  rgba(0,0,0,0.8);
 }
-.cardh{
+
+.cardh {
     background-size: cover;
     margin-right: 0px;
     width:calc(0.1 * 200vw) ;
@@ -72,31 +74,35 @@
     border-radius: 7px;
 }
 
-.mbot{
+.mbot {
     position: absolute;
         bottom: 0;
         left: 0;
 }
 
-nav{
+nav {
     height: 10%;
     padding-top: 0;
 }
-#navb{
+
+#navb {
     padding: 0;
     margin: 0;
     height: 50px;
 
 }
-.formgroups{
+
+.formgroups {
     border-top: 2px solid gray;
     margin:20px;
     padding: 10px;
 }
-.formli{
+
+.formli {
     margin-bottom: 15px;
 }
-.formli>input{
+
+.formli>input {
     border: 2px solid black;
     border-radius: 5px;
 }

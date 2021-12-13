@@ -1,8 +1,11 @@
-/* begin navbar style */
-.navbar{
-    height: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.navbar {
+    padding: 0;
+    height: 50px;
     color:black;
 }
+
 .navbar ul {
     margin: 0;
 }
@@ -15,64 +18,37 @@
     color: white;
 }
 
-#nav-left-side{
-    align-content: flex-end;
-}
-
-/* begin admin dashboard style */
-.main-content {
-    position: relative;
-    padding-top: 75px;
-}
-
-.main-content .buttons-and-stats {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 100px;
-    flex-wrap: wrap;
-}
-
-.main-content .buttons-and-stats .box {
-    width: calc(100% / 5 - 15px);
-    display: flex;
-    align-items: center;
-    padding: 15px 14px;
-    justify-content: center;
-    background: rgb(228, 228, 228);
-    border-radius: 12px;
-    margin-top: 100px;
+#admin_card {
+    margin-top: 10%;
+    margin-left: 15%;
+    border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* content inside the box */
-.main-content .buttons-and-stats .box_topic {
-    font-size: 20px;
+#deny_btn {
+    padding: 9px 25px;
+    background-color: rgb(184, 34, 34);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
     font-weight: 500;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
 }
 
-/* arrow icons */
-.buttons-and-stats .indicator i {
-    height: 20px;
-    width: 20px;
-}
-
-/* the actual number in the box */
-.main-content .buttons-and-stats .number {
-    font-size: 35px;
+#approve_btn {
+    padding: 9px 25px;
+    background-color: rgb(16, 189, 71);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
     font-weight: 500;
-    margin-top: 5px;
-    display: inline-block;
-}
-
-/* big box for pending approval posts */
-.main-content .pending-approved-box .box .title {
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.main-content .pending-approved-box {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
 }
