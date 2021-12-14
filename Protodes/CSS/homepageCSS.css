@@ -18,8 +18,10 @@
 }
 
 .htitle{
-    color:#FCE308 ;
-    font-weight: bold;
+    color:white ;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 350;
 }
 
 #row4{
@@ -163,3 +165,4 @@ a:hover{
     text-align: left;
     margin-bottom: 0;
 }
+
