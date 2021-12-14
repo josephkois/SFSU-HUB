@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>View Housing</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="HousingPage.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  </head>
+
+  <body>
+     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Navbar (not perfect)-->
+    <div class="container row">
+        <nav class="fixed-top navbar-expand-lg " style="margin-right:15px">
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                data-target="#navb" aria-expanded="false" style="border-color: yellow; color:black">
+                <span class="material-icons">
+                    menu
+                </span>
+    
+            </button>
+            <div class="collapse navbar-collapse row justify-content-between " style="background-color: #34328F" id="navb">
+                <div class="col-4" id="navb" style="margin-left:15px">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../HomePage.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Events page/EventsPage.html" >Events <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../Books Page/BooksPage.html" >Books<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="HousingPage.html"  style="font-weight: bold;">Housing<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="col-md-3">
+                    <div >
+                        <div style="float: left;">
+                            <a class="navbar-brand" href="#" style="line-height: 45px;">
+                                <span class="material-icons md-light md-24"></span>
+                            </a>
+                        </div>
+                    <div style="float: left;position: absolute; right: 170px;">
+                        <a class="navbar-brand" href="#" style="line-height: 45px;color:white">
+                            <span class="material-icons md-light md-24">help_outline</span>
+                        </a>
+                    </div>
+                    <div style="float: left;position: absolute; right: 130px;">
+                        <a class="navbar-brand" href="#" style="line-height: 45px;color:white">
+                            <span class="material-icons md-light md-24">settings</span>
+                        </a>
+                    </div>
+                    <div style="float: left;position: absolute; right: 80px;">
+                        <a class="navbar-brand" href="#" style="line-height:30px;">
+                            <img src="https://i1.wp.com/media.globalnews.ca/videostatic/353/499/oldestmanthumb.jpg?w=1040&quality=70&strip=all" alt="Avatar Logo" style="border-radius:50%;height:30px;width:30px;">
+    
+                        </a>
+                    </div>
+                    <div style="float: left; position: absolute; right:0;">
+                        <a class="nav-link" href="#" style="line-height:30px;color:white; padding-left: 0;">Username<span
+                            class="sr-only">(current)</span></a>
+                    </div>
+                </div>
+                </div>
+          
+            </div>
+    
+        </nav>
+
+
+    </div>
+
+   
+    <div class="row" style="margin-top:100px;margin-left:30px">
+        <a class="col-lg-1" href="Housingpage-ViewAll.html" style="height:50px">
+                <img src="https://cdn-icons-png.flaticon.com/512/271/271218.png" width="50px">
+           
+        </a>
+        
+        <div class="col-lg-10" style="margin-bottom:150px"> 
+            <div class="row">
+                <div id="carouselExampleIndicators" class="col-12 carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" style="height:500px;border-radius: 25px;display:flex;align-items:center">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://cdn.vox-cdn.com/thumbor/6itLJS9BZ-B5gXPjM1AB_z-ZKVI=/0x0:3000x2000/1200x800/filters:focal(1260x760:1740x1240)/cdn.vox-cdn.com/uploads/chorus_image/image/65890203/iStock_1067331614.7.jpg" alt="First slide" style="width:100%">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://media.architecturaldigest.com/photos/571e97ce818277135ff91620/master/w_2626,h_1821,c_limit/modernist-decor-inspiration-07.jpg" alt="Second slide" >
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://www.decorilla.com/online-decorating/wp-content/uploads/2020/07/Coastal-house-interior-design.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>   
+            <div class="row justify-content-between" style="margin-top:30px">
+                <h class="col-lg-5" style="font-size:60px;font-weight:bold;margin-left:30px">House Title</h>
+               
+            </div>
+            <div class="row" style="margin-top:10px;margin-left:30px">
+                <div class="row col-8">
+                    <div class="col-7">
+                        <div class="row">
+                            <div class="col-12" style="margin-top:30px">
+                                <p style="font-family:Montserrat"><strong>Address: </strong> 5678 Holloway Avenue</p>
+                                <p style="font-family:Montserrat"><strong>Apartment: </strong>A</p>
+                                <p style="font-family:Montserrat"><strong>Postal Code: </strong>54321</p>
+                            </div>
+                            <hr  style="width:500px;text-align: left;" size="30" noshade> 
+                            <div class="col-12">
+                                <p style="font-family:Montserrat"><strong>Description: </strong></p>
+                                <p style="font-family:Montserrat;margin-right:25px">A nice apartment in the middle of San Francisco. Is far from campus, but has all amenities included. Furnished, but PG&E costs are not included in price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="vertical" style="height:inherit;margin-bottom:0px"></div>
+                    <div class="col-4" style="margin-left:20px;margin-top:30px">
+                        <h1 style="font-size:25px;font-family:Montserrat">Special tags</h1>
+                        <ul style="font-family:Montserrat">
+                            <li> Party friendly</li>
+                            <li> Pet friendly</li>
+                            <li> Shared</li>
+                            <li> Female only</li>
+                        </ul>
+
+                        <div class="row align-items-center" style="margin-top:50px;margin-left:10px">
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/962px-Person_icon_BLACK-01.svg.png' style="height:80px">
+                            <div style="font-size:45px;font-weight:bold;font-family:Montserrat">5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row col-4">
+                    <div class="row col-12" style="border-radius: 60px;border-style: solid;border-color: gray;height:50%;">
+                        <div class="row col-12" style="font-family:Montserrat;font-weight:bold;margin-top:20px;margin-left:10px;font-size:25px">
+                            Price:
+                        </div>
+                        <div class="row col-12" style="font-family:Montserrat;font-weight:bolder;margin-left:20px;font-size:45px">
+                            $5000/mo
+                            
+                        </div>
+                    </div>
+                    <a class="col-lg-12" style="color:white;text-decoration: none;margin-top:90px" data-toggle="modal" data-target="#exampleModal">
+                            <div class="row col-lg-12 align-items-center rounded-pill hov4" style="font-weight:bold;font-size:20px">
+                                <p class="col-lg-12" style="margin:auto">View contact details</p>
+                            </div>
+                             
+                    </a>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Details</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Email: max@sfsu.edu</p>
+              <p>Telephone number: (432) 654 2345</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+
+   
+    
+
+  </body>
+</html>
