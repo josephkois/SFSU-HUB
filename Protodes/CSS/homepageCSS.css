@@ -5,23 +5,24 @@
 
 }
 
-#row3{
+#row3 {
     background-color: #34328F;
     margin-bottom: 3%;
     border-radius: 10px;
 }
 
-#rowt{
+#rowt {
     margin-bottom: 3%;
     padding: 0%;
     border-radius: 10px;
 }
 
-.htitle{
+.htitle {
     color:white ;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: 350;
+    margin-left: 0.5%;
 }
 
 #row4{
